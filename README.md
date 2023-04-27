@@ -4,7 +4,7 @@
 
 <h1 align="center">A Murder Engine hello world!</h1>
 
-Welcome to this amazing experience that is trying out your very first with the Murder Engine.
+Welcome to this amazing experience that is trying out your very first game with the Murder Engine.
 
 ### How to build it?
 The first step is to create your game with an editor. Open in Visual Studio (2022+ so it supports .NET 7), make sure that `HelloMurder.Editor` is your startup project and click **F5**.
