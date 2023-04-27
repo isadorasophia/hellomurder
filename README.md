@@ -1,5 +1,5 @@
 <p align="center">
-<img width="450" src="https://raw.githubusercontent.com/isadorasophia/hellomurder/main/.github/images/murder_logo.png?token=GHSAT0AAAAAAB6VJRKKWHJGI2C5UTHAJSDKZCKDR2A" alt="Murder logo">
+<img width="450" src=".github/images/murder_logo.png" alt="Murder logo">
 </p>
 
 <h1 align="center">A Murder Engine hello world!</h1>
