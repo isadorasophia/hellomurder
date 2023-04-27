@@ -22,6 +22,7 @@ using Bang.StateMachines;
 using Bang.Components;
 using Murder.StateMachines;
 using Murder.Interactions;
+using HelloMurder.StateMachines;
 using Murder.Messages;
 using Road.Messages;
 using Murder.Messages.Physics;
@@ -189,7 +190,8 @@ namespace Bang.Entities
             { typeof(InteractiveComponent<SetPositionInteraction>), 94 },
             { typeof(InteractiveComponent<TalkToInteraction>), 94 },
             { typeof(PositionComponent), 95 },
-            { typeof(PositionRotationComponent), 95 }
+            { typeof(PositionRotationComponent), 95 },
+            { typeof(StateMachineComponent<MainMenuStateMachine>), 93 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> ComponentsIndex => _componentsIndex;

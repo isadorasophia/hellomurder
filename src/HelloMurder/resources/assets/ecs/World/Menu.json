@@ -20,7 +20,23 @@
     "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
   },
   "_entities": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib"
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+    "e5c06d11-f5cb-4f1b-938f-bccafdd97d29": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "e5c06d11-f5cb-4f1b-938f-bccafdd97d29",
+      "_name": "Menu",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder]], Bang",
+          "_routine": {
+            "$type": "HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder",
+            "_newGameWorld": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
+            "_cachedPersistedState": "Main"
+          }
+        }
+      }
+    }
   },
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"

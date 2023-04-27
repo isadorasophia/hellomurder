@@ -2,7 +2,13 @@
   "Namespace": "HelloMurder",
   "ComponentsMap": {},
   "MessagesMap": {},
-  "GenericsMap": {},
+  "GenericsMap": {
+    "StateMachineComponent<MainMenuStateMachine>": {
+      "Index": 93,
+      "InstanceType": "Bang.StateMachines.StateMachineComponent`1, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "GenericArgument": "HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
   "ParentDescriptor": {
     "Namespace": "Murder",
     "ComponentsMap": {
@@ -1271,5 +1277,11 @@
   },
   "Components": [],
   "Messages": [],
-  "Generics": []
+  "Generics": [
+    {
+      "Index": 93,
+      "InstanceType": "Bang.StateMachines.StateMachineComponent`1, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "GenericArgument": "HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ]
 }
