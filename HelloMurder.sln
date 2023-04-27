@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMurder.Editor", "src\H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder.Editor", "murder\src\Murder.Editor\Murder.Editor.csproj", "{D0180438-59CB-4291-9669-0866B28AB122}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gum", "murder\gum\src\Gum\Gum.csproj", "{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D0180438-59CB-4291-9669-0866B28AB122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0180438-59CB-4291-9669-0866B28AB122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0180438-59CB-4291-9669-0866B28AB122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{62942AAD-901E-499B-A031-630CE9697ED6} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 		{3532AECC-A25C-4530-BABA-692F25668999} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 		{D0180438-59CB-4291-9669-0866B28AB122} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19CF3A5B-68E0-4F31-A74A-E49966DBD717}
