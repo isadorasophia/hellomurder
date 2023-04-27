@@ -537,6 +537,26 @@
           }
         }
       }
+    },
+    "ad4db301-6039-4d5d-ad89-28c5cd5f03ba": {
+      "$type": "Murder.Prefabs.PrefabEntityInstance, Murder",
+      "PrefabRef": {
+        "$type": "Murder.Prefabs.PrefabReference, Murder",
+        "Guid": "fce7634c-9ba9-4279-9fa0-129fc9816287"
+      },
+      "_removeComponent": {
+        "$type": "System.Collections.Generic.HashSet`1[[System.Type, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "_childrenModifiers": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityModifier, Murder]], System.Private.CoreLib"
+      },
+      "_ignorePrefabChildren": false,
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib"
+      },
+      "_guid": "ad4db301-6039-4d5d-ad89-28c5cd5f03ba",
+      "_name": "Camera man"
     }
   },
   "_entitiesToFolder": {

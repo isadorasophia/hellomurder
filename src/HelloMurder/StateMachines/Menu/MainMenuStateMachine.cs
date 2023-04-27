@@ -8,6 +8,7 @@ using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
+using Murder.Utilities;
 using Newtonsoft.Json;
 using System.Diagnostics;
 
@@ -130,10 +131,11 @@ namespace HelloMurder.StateMachines
         {
             Debug.Assert(_optionsInfo.Options is not null);
 
-            var cameraHalfSize = render.Camera.Size / 2f;
+            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _optionsInfo.Length * 7);
 
-            RenderServices.DrawVerticalMenu(render, cameraHalfSize, Vector2.Center, Game.Data.LargeFont, Palette.Colors[5], Palette.Colors[4], Palette.Colors[2], _menuInfo.Selection, 
-                out var selectorPosition, _optionsInfo.Options);
+            RenderServices.DrawVerticalMenu(render, cameraHalfSize, new Vector2(.5f, .5f), Game.Data.LargeFont, selectedColor: Palette.Colors[7], 
+                color: Palette.Colors[5], shadow: Palette.Colors[1], _menuInfo.Selection, 
+                out _, _optionsInfo.Options);
         }
     }
 }
