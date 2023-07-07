@@ -19,7 +19,7 @@ dotnet run
 
 **\> _Visual Studio_**
 
-Open `LDGame.sln` on Visual Studio 2022, set `HelloMurder.Editor` as startup project and hit F5. 🎉
+Open `HelloMurder.sln` on Visual Studio 2022, set `HelloMurder.Editor` as startup project and hit F5. 🎉
 
 ### How do I play the game?
 You can either press **F5** in the editor or switch the startup project to `HelloMurder`. And that's it!
