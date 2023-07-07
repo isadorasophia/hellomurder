@@ -23,21 +23,61 @@
         },
         "RotateWithFacing": false,
         "FlipWithFacing": false,
+        "CanBeHighlighted": true,
+        "UseUnescaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
           "$values": []
         },
         "AnimationStartedTime": 0.0,
         "YSortOffset": 0
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent, Murder",
+        "Layer": 8,
+        "Shapes": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
+          "$values": [
+            {
+              "$type": "Murder.Core.Geometry.BoxShape, Murder",
+              "Width": 16,
+              "Height": 16,
+              "Origin": {
+                "$type": "Murder.Core.Geometry.Vector2, Murder",
+                "X": 0.0,
+                "Y": 0.0
+              },
+              "Offset": {
+                "$type": "Murder.Core.Geometry.Point, Murder",
+                "X": 0,
+                "Y": 0
+              }
+            }
+          ]
+        },
+        "DebugColor": {
+          "$type": "Murder.Core.Graphics.Color, Murder",
+          "R": 1.0,
+          "G": 0.0,
+          "B": 0.0,
+          "A": 1.0
+        }
       }
-    }
+    },
+    "IsDeactivated": false
   },
   "Dimensions": {
-    "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-    "X": 0,
-    "Y": 0,
-    "Width": 1,
-    "Height": 1
+    "$type": "Murder.Core.TileDimensions, Murder",
+    "Origin": {
+      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "Size": {
+      "$type": "Murder.Core.Geometry.Point, Murder",
+      "X": 1,
+      "Y": 1
+    }
   },
   "Name": "Player",
   "Guid": "e4676d89-51f1-455e-b6b3-e85d18b7b72f"

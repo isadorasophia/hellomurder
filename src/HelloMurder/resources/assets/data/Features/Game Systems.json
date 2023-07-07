@@ -41,6 +41,11 @@
         "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
         "Item1": "cae67a77-1cae-4306-9a49-18064a3abbac",
         "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "3c9b7e32-762a-46b1-8d96-6f18c2333762",
+        "Item2": true
       }
     ]
   },

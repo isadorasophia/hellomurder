@@ -25,16 +25,6 @@
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.FastPhysicsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.PhysicsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
         "Item1": "Murder.Systems.FrictionSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },

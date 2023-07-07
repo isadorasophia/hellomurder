@@ -5,47 +5,62 @@
     "$values": [
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.DynamicInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.EditorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.SpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Road.Editor.Systems.DebugActivatorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.AgentSpriteSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Systems.ConsoleSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.TilemapRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.DebugMapRenderSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.CustomDrawRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.DebugColliderRenderSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.SpriteThreeSliceRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.DebugRouteSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.AnimationOnPauseSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.EntitiesSelectorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.PolygonSpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.DebugShowInteractionsSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.StaticInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.StateMachineDebugSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.SystemsDiagnosticsSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.Debug.BlackboardTrackerSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item2": true
+      },
+      {
+        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "Item1": "Murder.Editor.Systems.Debug.QuadTreeDebugSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       }
     ]
@@ -54,6 +69,6 @@
     "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
     "$values": []
   },
-  "Name": "Render",
-  "Guid": "5afe8a7a-6747-4f3a-b269-3e3042cd1426"
+  "Name": "Debug",
+  "Guid": "3c9b7e32-762a-46b1-8d96-6f18c2333762"
 }

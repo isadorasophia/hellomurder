@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Murder", "Murder", "{DBBB60
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder", "murder\src\Murder\Murder.csproj", "{C5CEE0DD-3717-438E-A2BD-7E16CE782068}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bang", "murder\bang\src\Bang.csproj", "{62942AAD-901E-499B-A031-630CE9697ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bang", "murder\bang\src\Bang\Bang.csproj", "{62942AAD-901E-499B-A031-630CE9697ED6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder.Generator", "murder\src\Murder.Generator\Murder.Generator.csproj", "{3532AECC-A25C-4530-BABA-692F25668999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bang.Generator", "murder\bang\src\Bang.Generator\Bang.Generator.csproj", "{3532AECC-A25C-4530-BABA-692F25668999}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloMurder.Editor", "src\HelloMurder.Editor\HelloMurder.Editor.csproj", "{DA9775EF-2C65-4A6B-9B6E-12DB3EE121D1}"
 EndProject

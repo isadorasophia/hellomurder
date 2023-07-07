@@ -7,15 +7,15 @@ namespace HelloMurder.Core
         public readonly static Color[] Colors = new Color[]
         {
             Color.FromHex("000000"),
-            Color.FromHex("524B24"),
-            Color.FromHex("524B24"),
+            Color.FromHex("1B222A"),
+            Color.FromHex("2D334F"),
             Color.FromHex("847E87"),
-            Color.FromHex("9BADB7"),
+            Color.FromHex("FB43C5"),
             Color.FromHex("CBDBFC"),
-            Color.FromHex("58384F"),
-            Color.FromHex("FFC300"),
-            Color.FromHex("FF9A2E"),
-            Color.FromHex("BF5A6B")
+            Color.FromHex("737480"),
+            Color.FromHex("737480"),
+            Color.FromHex("FFB3AB"),
+            Color.FromHex("FB43C5")
         };
 
         static Palette()

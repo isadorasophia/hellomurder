@@ -8,9 +8,7 @@ using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
-using Murder.Utilities;
 using Newtonsoft.Json;
-using System.Diagnostics;
 
 namespace HelloMurder.StateMachines
 {
@@ -20,13 +18,12 @@ namespace HelloMurder.StateMachines
         private readonly Guid _newGameWorld = Guid.Empty;
 
         private MenuInfo _menuInfo = new();
-        private OptionsInfo _optionsInfo = new();
 
-        private OptionsInfo GetMainMenuOptions() =>
-            new OptionsInfo(options: new MenuOption[] { new("Continue", selectable: MurderSaveServices.CanLoadSave()), new("New Game"), new("Options"), new("Exit") });
+        private MenuInfo GetMainMenuOptions() =>
+            new MenuInfo(new MenuOption[] { new("Continue", selectable: MurderSaveServices.CanLoadSave()), new("New Game"), new("Options"), new("Exit") });
 
-        private OptionsInfo GetOptionOptions() =>
-            new OptionsInfo(options: new MenuOption[] {
+        private MenuInfo GetOptionOptions() =>
+            new MenuInfo(new MenuOption[] {
                 new(Game.Preferences.SoundVolume == 1 ? "Sounds on" : "Sounds off"),
                 new(Game.Preferences.MusicVolume == 1 ? "Music on" : "Music off"),
                 new("Back to menu") });
@@ -40,24 +37,21 @@ namespace HelloMurder.StateMachines
         {
             Entity.SetCustomDraw(DrawMainMenu);
 
-            _menuInfo.Selection = MurderSaveServices.CanLoadSave() ? 0 : 1;
+            _menuInfo.Select(MurderSaveServices.CanLoadSave() ? 0 : 1);
         }
 
         private IEnumerator<Wait> Main()
         {
-            _optionsInfo = GetMainMenuOptions();
-            _menuInfo.Selection = _optionsInfo.NextAvailableOption(-1, 1);
+            _menuInfo = GetMainMenuOptions();
+            _menuInfo.Select(_menuInfo.NextAvailableOption(-1, 1));
 
             while (true)
             {
-                if (Game.Input.VerticalMenu(ref _menuInfo, _optionsInfo))
+                if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Continue Game
-                            EffectsServices.FadeIn(World, .5f, Palette.Colors[1], false);
-                            yield return Wait.ForSeconds(.5f);
-
                             Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld();
                             Game.Instance.QueueWorldTransition(targetWorld ?? _newGameWorld);
 
@@ -65,10 +59,6 @@ namespace HelloMurder.StateMachines
 
                         case 1: //  New Game
                             Game.Data.DeleteAllSaves();
-
-                            EffectsServices.FadeIn(World, .5f, Palette.Colors[1], false);
-                            yield return Wait.ForSeconds(.5f);
-
                             Game.Instance.QueueWorldTransition(_newGameWorld);
                             break;
 
@@ -91,27 +81,25 @@ namespace HelloMurder.StateMachines
         
         private IEnumerator<Wait> Options()
         {
-            _optionsInfo = GetOptionOptions();
-            _menuInfo.Selection = _optionsInfo.NextAvailableOption(-1, 1);
-
-            Debug.Assert(_optionsInfo.Options is not null);
+            _menuInfo = GetOptionOptions();
+            _menuInfo.Select(_menuInfo.NextAvailableOption(-1, 1));
 
             while (true)
             {
-                if (Game.Input.VerticalMenu(ref _menuInfo, _optionsInfo))
+                if (Game.Input.VerticalMenu(ref _menuInfo))
                 {
                     switch (_menuInfo.Selection)
                     {
                         case 0: // Tweak sound
                             float volume = Game.Preferences.ToggleSoundVolumeAndSave();
 
-                            _optionsInfo.Options[0] = volume == 1 ? new("Sounds on") : new("Sounds off");
+                            _menuInfo.Options[0] = volume == 1 ? new("Sounds on") : new("Sounds off");
                             break;
 
                         case 1: // Tweak music
                             float sound = Game.Preferences.ToggleMusicVolumeAndSave();
 
-                            _optionsInfo.Options[1] = sound == 1 ? new("Music on") : new("Music off");
+                            _menuInfo.Options[1] = sound == 1 ? new("Music on") : new("Music off");
                             break;
 
                         case 2: // Go back
@@ -129,13 +117,18 @@ namespace HelloMurder.StateMachines
 
         private void DrawMainMenu(RenderContext render)
         {
-            Debug.Assert(_optionsInfo.Options is not null);
+            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _menuInfo.Length * 7);
 
-            Point cameraHalfSize = render.Camera.Size / 2f - new Point(0, _optionsInfo.Length * 7);
-
-            RenderServices.DrawVerticalMenu(render, cameraHalfSize, new Vector2(.5f, .5f), Game.Data.LargeFont, selectedColor: Palette.Colors[7], 
-                color: Palette.Colors[5], shadow: Palette.Colors[1], _menuInfo.Selection, 
-                out _, _optionsInfo.Options);
+            _ = RenderServices.DrawVerticalMenu(
+                render.UiBatch, 
+                cameraHalfSize, 
+                new DrawMenuStyle() 
+                { 
+                    Color = Palette.Colors[7], 
+                    Shadow = Palette.Colors[1],
+                    SelectedColor = Palette.Colors[9]
+                },
+                _menuInfo);
         }
     }
 }
