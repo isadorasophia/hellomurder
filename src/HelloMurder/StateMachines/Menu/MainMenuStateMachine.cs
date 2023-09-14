@@ -67,7 +67,7 @@ namespace HelloMurder.StateMachines
                             break;
 
                         case 3: //  Exit
-                            Game.Instance.ExitGame();
+                            Game.Instance.QueueExitGame();
                             break;
 
                         default:

@@ -24,7 +24,7 @@
         "RotateWithFacing": false,
         "FlipWithFacing": false,
         "CanBeHighlighted": true,
-        "UseUnescaledTime": false,
+        "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
           "$values": []
