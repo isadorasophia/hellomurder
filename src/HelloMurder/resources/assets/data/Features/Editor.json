@@ -10,7 +10,7 @@
       },
       {
         "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Road.Editor.Systems.DebugActivatorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "Item1": "Murder.Editor.Systems.DebugActivatorSystem, Murder.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "Item2": true
       },
       {
