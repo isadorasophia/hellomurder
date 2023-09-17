@@ -202,7 +202,7 @@
     "B": 0.23921569,
     "A": 1.0
   },
-  "DefaultPalette": "images\\murder_palette",
+  "DefaultPalette": "images/murder_palette",
   "MissingImage": "485a9a13-e62b-7215-dbc3-9e1df4bcba73",
   "Name": "Game Profile",
   "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f"
