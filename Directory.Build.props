@@ -1,8 +1,18 @@
 <Project>
+  
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+  
+  <!-- Add beautiful Bang analyzers -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\murder\bang\src\Bang.Analyzers\Bang.Analyzers.csproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <OutputItemType>Analyzer</OutputItemType>
+    </ProjectReference>
+  </ItemGroup>
+  
 </Project>
