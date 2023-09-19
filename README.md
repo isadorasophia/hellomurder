@@ -15,8 +15,7 @@ git clone --recurse-submodules https://github.com/isadorasophia/hellomurder
 
 or, after cloning:
 ```bash
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ### ⚙️ How to build it?
