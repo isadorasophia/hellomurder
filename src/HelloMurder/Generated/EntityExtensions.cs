@@ -22,50 +22,91 @@ using Bang.Interactions;
 using Murder.Components.Graphics;
 using Bang.StateMachines;
 using Bang.Components;
+using HelloMurder.Components;
 using Murder.StateMachines;
 using Murder.Interactions;
 using HelloMurder.StateMachines;
 using Murder.Messages;
 using Murder.Core.Graphics;
 using Murder.Messages.Physics;
+using HelloMurder.Messages;
 using System.Collections.Immutable;
 
 namespace Bang.Entities
 {
     public enum HelloMurderComponentType
     {
-        
+        Player = 133
     }
 
     public enum HelloMurderMessageType
     {
-        
+        AgentInput = 134,
+        AgentReleaseInput = 135
     }
 
     public static class HelloMurderEntityExtensions
     {
         #region Component "Get" methods!
-        
+        public static PlayerComponent GetPlayer(this Entity e)
+        {
+            return e.GetComponent<PlayerComponent>(133);
+        }
         #endregion
         
         #region Component "Has" checkers!
-        
+        public static bool HasPlayer(this Entity e)
+        {
+            return e.HasComponent(133);
+        }
         #endregion
         
         #region Component "TryGet" methods!
-        
+        public static PlayerComponent? TryGetPlayer(this Entity e)
+        {
+            if (!e.HasPlayer())
+            {
+                return null;
+            }
+
+            return e.GetPlayer();
+        }
         #endregion
         
         #region Component "Set" methods!
-        
+        public static void SetPlayer(this Entity e, PlayerComponent component)
+        {
+            e.AddOrReplaceComponent(component, 133);
+        }
+
+        public static void SetPlayer(this Entity e, HelloMurder.Components.PlayerStates state)
+        {
+            e.AddOrReplaceComponent(new PlayerComponent(state), 133);
+        }
+
+        public static void SetPlayer(this Entity e)
+        {
+            e.AddOrReplaceComponent(new PlayerComponent(), 133);
+        }
         #endregion
         
         #region Component "Remove" methods!
-        
+        public static bool RemovePlayer(this Entity e)
+        {
+            return e.RemoveComponent(133);
+        }
         #endregion
 
         #region Message "Has" checkers!
-        
+        internal static bool HasAgentInputMessage(this Entity e)
+        {
+            return e.HasMessage(134);
+        }
+
+        internal static bool HasAgentReleaseInputMessage(this Entity e)
+        {
+            return e.HasMessage(135);
+        }
         #endregion
     }
 
@@ -201,6 +242,7 @@ namespace Bang.Entities
             { typeof(IInteractiveComponent), 116 },
             { typeof(IMurderTransformComponent), 117 },
             { typeof(ITransformComponent), 117 },
+            { typeof(PlayerComponent), 133 },
             { typeof(StateMachineComponent<Coroutine>), 115 },
             { typeof(StateMachineComponent<DialogStateMachine>), 115 },
             { typeof(InteractiveComponent<AddChildOnInteraction>), 116 },
@@ -243,7 +285,9 @@ namespace Bang.Entities
             { typeof(OnTriggerEnteredMessage), 129 },
             { typeof(PathNotPossibleMessage), 130 },
             { typeof(PickChoiceMessage), 131 },
-            { typeof(TouchedGroundMessage), 132 }
+            { typeof(TouchedGroundMessage), 132 },
+            { typeof(AgentInputMessage), 134 },
+            { typeof(AgentReleaseInputMessage), 135 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> MessagesIndex => _messagesIndex;

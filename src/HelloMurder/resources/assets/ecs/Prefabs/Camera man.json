@@ -23,7 +23,7 @@
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",
     "Origin": {
-      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
       "X": 0.0,
       "Y": 0.0
     },

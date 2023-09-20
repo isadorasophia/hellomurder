@@ -17,7 +17,7 @@
         "TargetSpriteBatch": 0,
         "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
         "Offset": {
-          "$type": "Murder.Core.Geometry.Vector2, Murder",
+          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
           "X": 0.0,
           "Y": 0.0
         },
@@ -43,7 +43,7 @@
               "Width": 16,
               "Height": 16,
               "Origin": {
-                "$type": "Murder.Core.Geometry.Vector2, Murder",
+                "$type": "System.Numerics.Vector2, System.Private.CoreLib",
                 "X": 0.0,
                 "Y": 0.0
               },
@@ -69,7 +69,7 @@
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",
     "Origin": {
-      "$type": "Murder.Core.Geometry.Vector2, Murder",
+      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
       "X": 0.0,
       "Y": 0.0
     },

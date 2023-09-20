@@ -1,7 +1,24 @@
 {
   "Namespace": "HelloMurder",
-  "ComponentsMap": {},
-  "MessagesMap": {},
+  "ComponentsMap": {
+    "Player": {
+      "Index": 133,
+      "Name": "Player",
+      "Type": "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
+  "MessagesMap": {
+    "AgentInput": {
+      "Index": 134,
+      "Name": "AgentInput",
+      "Type": "HelloMurder.Messages.AgentInputMessage, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "AgentReleaseInput": {
+      "Index": 135,
+      "Name": "AgentReleaseInput",
+      "Type": "HelloMurder.Messages.AgentReleaseInputMessage, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
   "GenericsMap": {
     "StateMachineComponent<MainMenuStateMachine>": {
       "Index": 115,
@@ -1575,8 +1592,25 @@
       }
     ]
   },
-  "Components": [],
-  "Messages": [],
+  "Components": [
+    {
+      "Index": 133,
+      "Name": "Player",
+      "Type": "HelloMurder.Components.PlayerComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
+  "Messages": [
+    {
+      "Index": 134,
+      "Name": "AgentInput",
+      "Type": "HelloMurder.Messages.AgentInputMessage, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "Index": 135,
+      "Name": "AgentReleaseInput",
+      "Type": "HelloMurder.Messages.AgentReleaseInputMessage, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
   "Generics": [
     {
       "Index": 115,
