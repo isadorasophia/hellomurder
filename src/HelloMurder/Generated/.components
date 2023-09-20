@@ -642,7 +642,7 @@
       "Interactor": {
         "Index": 124,
         "Name": "Interactor",
-        "Type": "Bang.Components.InteractorMessage, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "Type": "Bang.Interactions.InteractorMessage, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       },
       "IsInsideOf": {
         "Index": 125,
@@ -1424,7 +1424,7 @@
       {
         "Index": 124,
         "Name": "Interactor",
-        "Type": "Bang.Components.InteractorMessage, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "Type": "Bang.Interactions.InteractorMessage, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       },
       {
         "Index": 125,
