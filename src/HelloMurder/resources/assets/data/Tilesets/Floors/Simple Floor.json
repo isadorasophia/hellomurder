@@ -1,0 +1,9 @@
+{
+  "$type": "Murder.Assets.Graphics.FloorAsset, Murder",
+  "Image": {
+    "$type": "Murder.Utilities.AssetRef`1[[Murder.Assets.Graphics.SpriteAsset, Murder]], Murder",
+    "Guid": "bb95d6e2-0aba-477e-bec0-3e0be65be8ab"
+  },
+  "Name": "Simple Floor",
+  "Guid": "0a6d56f5-6881-4c45-8912-3db8ca25bd9c"
+}

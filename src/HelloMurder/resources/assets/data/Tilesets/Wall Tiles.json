@@ -1,0 +1,23 @@
+{
+  "$type": "Murder.Assets.Graphics.TilesetAsset, Murder",
+  "Image": "e230c5a3-9c73-6432-44d7-fbeedf8ee0ee",
+  "Reflection": "00000000-0000-0000-0000-000000000000",
+  "Offset": {
+    "$type": "Murder.Core.Geometry.Point, Murder",
+    "X": 0,
+    "Y": 19
+  },
+  "Size": {
+    "$type": "Murder.Core.Geometry.Point, Murder",
+    "X": 24,
+    "Y": 36
+  },
+  "YSortOffset": 0,
+  "ConsiderOutsideOccupied": false,
+  "CollisionLayer": 65,
+  "Order": 0,
+  "TargetBatch": 0,
+  "Sort": 0.0,
+  "Name": "Wall Tiles",
+  "Guid": "925a5a60-0e7b-4ddd-b368-222819c593dc"
+}
