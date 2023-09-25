@@ -14,6 +14,7 @@
 
 using Murder.Components;
 using Murder.Components.Agents;
+using Murder.Core.Graphics;
 using Murder.Component;
 using Murder.Components.Cutscenes;
 using Murder.Components.Serialization;
@@ -27,7 +28,6 @@ using Murder.StateMachines;
 using Murder.Interactions;
 using HelloMurder.StateMachines;
 using Murder.Messages;
-using Murder.Core.Graphics;
 using Murder.Messages.Physics;
 using HelloMurder.Messages;
 using System.Collections.Immutable;
@@ -36,13 +36,13 @@ namespace Bang.Entities
 {
     public enum HelloMurderComponentType
     {
-        Player = 133
+        Player = 135
     }
 
     public enum HelloMurderMessageType
     {
-        AgentInput = 134,
-        AgentReleaseInput = 135
+        AgentInput = 136,
+        AgentReleaseInput = 137
     }
 
     public static class HelloMurderEntityExtensions
@@ -50,14 +50,14 @@ namespace Bang.Entities
         #region Component "Get" methods!
         public static PlayerComponent GetPlayer(this Entity e)
         {
-            return e.GetComponent<PlayerComponent>(133);
+            return e.GetComponent<PlayerComponent>(135);
         }
         #endregion
         
         #region Component "Has" checkers!
         public static bool HasPlayer(this Entity e)
         {
-            return e.HasComponent(133);
+            return e.HasComponent(135);
         }
         #endregion
         
@@ -76,36 +76,36 @@ namespace Bang.Entities
         #region Component "Set" methods!
         public static void SetPlayer(this Entity e, PlayerComponent component)
         {
-            e.AddOrReplaceComponent(component, 133);
+            e.AddOrReplaceComponent(component, 135);
         }
 
         public static void SetPlayer(this Entity e, HelloMurder.Components.PlayerStates state)
         {
-            e.AddOrReplaceComponent(new PlayerComponent(state), 133);
+            e.AddOrReplaceComponent(new PlayerComponent(state), 135);
         }
 
         public static void SetPlayer(this Entity e)
         {
-            e.AddOrReplaceComponent(new PlayerComponent(), 133);
+            e.AddOrReplaceComponent(new PlayerComponent(), 135);
         }
         #endregion
         
         #region Component "Remove" methods!
         public static bool RemovePlayer(this Entity e)
         {
-            return e.RemoveComponent(133);
+            return e.RemoveComponent(135);
         }
         #endregion
 
         #region Message "Has" checkers!
         internal static bool HasAgentInputMessage(this Entity e)
         {
-            return e.HasMessage(134);
+            return e.HasMessage(136);
         }
 
         internal static bool HasAgentReleaseInputMessage(this Entity e)
         {
-            return e.HasMessage(135);
+            return e.HasMessage(137);
         }
         #endregion
     }
@@ -114,9 +114,9 @@ namespace Bang.Entities
     {
         private static readonly ImmutableHashSet<int> _relativeComponents = new HashSet<int>()
         {
-            86,
-            117,
-            117
+            88,
+            119,
+            119
         }.ToImmutableHashSet();
 
         public override ImmutableHashSet<int> RelativeComponents => _relativeComponents;
@@ -133,161 +133,163 @@ namespace Bang.Entities
             { typeof(AnimationCompleteComponent), 7 },
             { typeof(AnimationEventBroadcasterComponent), 8 },
             { typeof(AnimationOverloadComponent), 9 },
-            { typeof(AnimationSpeedOverload), 10 },
-            { typeof(AttackMultiplier), 11 },
-            { typeof(BounceAmountComponent), 12 },
-            { typeof(CameraFollowComponent), 13 },
-            { typeof(CarveComponent), 14 },
-            { typeof(ChoiceComponent), 15 },
-            { typeof(ColliderComponent), 16 },
-            { typeof(CollisionCacheComponent), 17 },
-            { typeof(CustomCollisionMask), 18 },
-            { typeof(CustomDrawComponent), 19 },
-            { typeof(CustomTargetSpriteBatchComponent), 20 },
-            { typeof(CutsceneAnchorsComponent), 21 },
-            { typeof(CutsceneAnchorsEditorComponent), 22 },
-            { typeof(DestroyAtTimeComponent), 23 },
-            { typeof(DestroyOnAnimationCompleteComponent), 24 },
-            { typeof(DestroyOnBlackboardConditionComponent), 25 },
-            { typeof(DestroyOnCollisionComponent), 26 },
-            { typeof(DisableAgentComponent), 27 },
-            { typeof(DisableEntityComponent), 28 },
-            { typeof(DisableParticleSystemComponent), 29 },
-            { typeof(DisableSceneTransitionEffectsComponent), 30 },
-            { typeof(DoNotPauseComponent), 31 },
-            { typeof(DoNotPersistEntityOnSaveComponent), 32 },
-            { typeof(DrawRectangleComponent), 33 },
-            { typeof(EntityTrackerComponent), 34 },
-            { typeof(EventListenerComponent), 35 },
-            { typeof(EventListenerEditorComponent), 36 },
-            { typeof(FacingComponent), 37 },
-            { typeof(FadeScreenComponent), 38 },
-            { typeof(FadeTransitionComponent), 39 },
-            { typeof(FadeWhenInAreaComponent), 40 },
-            { typeof(FadeWhenInCutsceneComponent), 41 },
-            { typeof(FlashSpriteComponent), 42 },
-            { typeof(FreeMovementComponent), 43 },
-            { typeof(FreezeWorldComponent), 44 },
-            { typeof(FrictionComponent), 45 },
-            { typeof(GlobalShaderComponent), 46 },
-            { typeof(GuidToIdTargetCollectionComponent), 47 },
-            { typeof(GuidToIdTargetComponent), 48 },
-            { typeof(HAAStarPathfindComponent), 49 },
-            { typeof(HasVisionComponent), 50 },
-            { typeof(HighlightOnChildrenComponent), 51 },
-            { typeof(HighlightSpriteComponent), 52 },
-            { typeof(IdTargetCollectionComponent), 53 },
-            { typeof(IdTargetComponent), 54 },
-            { typeof(IgnoreTriggersUntilComponent), 55 },
-            { typeof(InCameraComponent), 56 },
-            { typeof(IndestructibleComponent), 57 },
-            { typeof(InsideMovementModAreaComponent), 58 },
-            { typeof(InstanceToEntityLookupComponent), 59 },
-            { typeof(InteractOnCollisionComponent), 60 },
-            { typeof(InteractOnRuleMatchCollectionComponent), 61 },
-            { typeof(InteractOnRuleMatchComponent), 62 },
-            { typeof(InteractOnStartComponent), 63 },
-            { typeof(InteractorComponent), 64 },
-            { typeof(LineComponent), 65 },
-            { typeof(MapComponent), 66 },
-            { typeof(MovementModAreaComponent), 67 },
-            { typeof(MoveToComponent), 68 },
-            { typeof(MoveToPerfectComponent), 69 },
-            { typeof(MusicComponent), 70 },
-            { typeof(NineSliceComponent), 71 },
-            { typeof(OnEnterOnExitComponent), 72 },
-            { typeof(ParallaxComponent), 73 },
-            { typeof(ParticleSystemComponent), 74 },
-            { typeof(ParticleSystemWorldTrackerComponent), 75 },
-            { typeof(PathfindComponent), 76 },
-            { typeof(PauseAnimationComponent), 77 },
-            { typeof(PickEntityToAddOnStartComponent), 78 },
-            { typeof(PolygonSpriteComponent), 79 },
-            { typeof(PrefabRefComponent), 80 },
-            { typeof(PushAwayComponent), 81 },
-            { typeof(QuadtreeComponent), 82 },
-            { typeof(QuestTrackerComponent), 83 },
-            { typeof(QuestTrackerRuntimeComponent), 84 },
-            { typeof(RandomizeSpriteComponent), 85 },
-            { typeof(RectPositionComponent), 86 },
-            { typeof(ReflectionComponent), 87 },
-            { typeof(RemoveColliderWhenStoppedComponent), 88 },
-            { typeof(RemoveEntityOnRuleMatchAtLoadComponent), 89 },
-            { typeof(RequiresVisionComponent), 90 },
-            { typeof(RoomComponent), 91 },
-            { typeof(RotateComponent), 92 },
-            { typeof(RouteComponent), 93 },
-            { typeof(RuleWatcherComponent), 94 },
-            { typeof(ScaleComponent), 95 },
-            { typeof(SituationComponent), 96 },
-            { typeof(SoundComponent), 97 },
-            { typeof(SoundParameterComponent), 98 },
-            { typeof(SoundWatcherComponent), 99 },
-            { typeof(SpeakerComponent), 100 },
-            { typeof(SpriteComponent), 101 },
-            { typeof(StateWatcherComponent), 102 },
-            { typeof(StaticComponent), 103 },
-            { typeof(StrafingComponent), 104 },
-            { typeof(TextureComponent), 105 },
-            { typeof(ThreeSliceComponent), 106 },
-            { typeof(TileGridComponent), 107 },
-            { typeof(TilesetComponent), 108 },
-            { typeof(TintComponent), 109 },
-            { typeof(UiDisplayComponent), 110 },
-            { typeof(VelocityComponent), 111 },
-            { typeof(VerticalPositionComponent), 112 },
-            { typeof(WaitForVacancyComponent), 113 },
-            { typeof(WindowRefreshTrackerComponent), 114 },
-            { typeof(IStateMachineComponent), 115 },
-            { typeof(IInteractiveComponent), 116 },
-            { typeof(IMurderTransformComponent), 117 },
-            { typeof(ITransformComponent), 117 },
-            { typeof(PlayerComponent), 133 },
-            { typeof(StateMachineComponent<Coroutine>), 115 },
-            { typeof(StateMachineComponent<DialogStateMachine>), 115 },
-            { typeof(InteractiveComponent<AddChildOnInteraction>), 116 },
-            { typeof(InteractiveComponent<AddComponentOnInteraction>), 116 },
-            { typeof(InteractiveComponent<AddEntityOnInteraction>), 116 },
-            { typeof(InteractiveComponent<AdvancedBlackboardInteraction>), 116 },
-            { typeof(InteractiveComponent<BlackboardActionInteraction>), 116 },
-            { typeof(InteractiveComponent<DebugInteraction>), 116 },
-            { typeof(InteractiveComponent<EnableChildrenInteraction>), 116 },
-            { typeof(InteractiveComponent<InteractChildOnInteraction>), 116 },
-            { typeof(InteractiveComponent<InteractionCollection>), 116 },
-            { typeof(InteractiveComponent<PlayMusicInteraction>), 116 },
-            { typeof(InteractiveComponent<PlaySoundInteraction>), 116 },
-            { typeof(InteractiveComponent<RemoveEntityOnInteraction>), 116 },
-            { typeof(InteractiveComponent<SendToOtherInteraction>), 116 },
-            { typeof(InteractiveComponent<SendToParentInteraction>), 116 },
-            { typeof(InteractiveComponent<SetPositionInteraction>), 116 },
-            { typeof(InteractiveComponent<SetSoundOnInteraction>), 116 },
-            { typeof(InteractiveComponent<StopMusicInteraction>), 116 },
-            { typeof(InteractiveComponent<TalkToInteraction>), 116 },
-            { typeof(PositionComponent), 117 },
-            { typeof(StateMachineComponent<MainMenuStateMachine>), 115 }
+            { typeof(AnimationRuleMatchedComponent), 10 },
+            { typeof(AnimationSpeedOverload), 11 },
+            { typeof(AttackMultiplier), 12 },
+            { typeof(BounceAmountComponent), 13 },
+            { typeof(CameraFollowComponent), 14 },
+            { typeof(CarveComponent), 15 },
+            { typeof(ChoiceComponent), 16 },
+            { typeof(ColliderComponent), 17 },
+            { typeof(CollisionCacheComponent), 18 },
+            { typeof(CustomCollisionMask), 19 },
+            { typeof(CustomDrawComponent), 20 },
+            { typeof(CustomTargetSpriteBatchComponent), 21 },
+            { typeof(CutsceneAnchorsComponent), 22 },
+            { typeof(CutsceneAnchorsEditorComponent), 23 },
+            { typeof(DestroyAtTimeComponent), 24 },
+            { typeof(DestroyOnAnimationCompleteComponent), 25 },
+            { typeof(DestroyOnBlackboardConditionComponent), 26 },
+            { typeof(DestroyOnCollisionComponent), 27 },
+            { typeof(DisableAgentComponent), 28 },
+            { typeof(DisableEntityComponent), 29 },
+            { typeof(DisableParticleSystemComponent), 30 },
+            { typeof(DisableSceneTransitionEffectsComponent), 31 },
+            { typeof(DoNotPauseComponent), 32 },
+            { typeof(DoNotPersistEntityOnSaveComponent), 33 },
+            { typeof(DrawRectangleComponent), 34 },
+            { typeof(EntityTrackerComponent), 35 },
+            { typeof(EventListenerComponent), 36 },
+            { typeof(EventListenerEditorComponent), 37 },
+            { typeof(FacingComponent), 38 },
+            { typeof(FadeScreenComponent), 39 },
+            { typeof(FadeTransitionComponent), 40 },
+            { typeof(FadeWhenInAreaComponent), 41 },
+            { typeof(FadeWhenInCutsceneComponent), 42 },
+            { typeof(FlashSpriteComponent), 43 },
+            { typeof(FreeMovementComponent), 44 },
+            { typeof(FreezeWorldComponent), 45 },
+            { typeof(FrictionComponent), 46 },
+            { typeof(GlobalShaderComponent), 47 },
+            { typeof(GuidToIdTargetCollectionComponent), 48 },
+            { typeof(GuidToIdTargetComponent), 49 },
+            { typeof(HAAStarPathfindComponent), 50 },
+            { typeof(HasVisionComponent), 51 },
+            { typeof(HighlightOnChildrenComponent), 52 },
+            { typeof(HighlightSpriteComponent), 53 },
+            { typeof(IdTargetCollectionComponent), 54 },
+            { typeof(IdTargetComponent), 55 },
+            { typeof(IgnoreTriggersUntilComponent), 56 },
+            { typeof(InCameraComponent), 57 },
+            { typeof(IndestructibleComponent), 58 },
+            { typeof(InsideMovementModAreaComponent), 59 },
+            { typeof(InstanceToEntityLookupComponent), 60 },
+            { typeof(InteractOnCollisionComponent), 61 },
+            { typeof(InteractOnRuleMatchCollectionComponent), 62 },
+            { typeof(InteractOnRuleMatchComponent), 63 },
+            { typeof(InteractOnStartComponent), 64 },
+            { typeof(InteractorComponent), 65 },
+            { typeof(LineComponent), 66 },
+            { typeof(MapComponent), 67 },
+            { typeof(MovementModAreaComponent), 68 },
+            { typeof(MoveToComponent), 69 },
+            { typeof(MoveToPerfectComponent), 70 },
+            { typeof(MusicComponent), 71 },
+            { typeof(NineSliceComponent), 72 },
+            { typeof(OnEnterOnExitComponent), 73 },
+            { typeof(ParallaxComponent), 74 },
+            { typeof(ParticleSystemComponent), 75 },
+            { typeof(ParticleSystemWorldTrackerComponent), 76 },
+            { typeof(PathfindComponent), 77 },
+            { typeof(PauseAnimationComponent), 78 },
+            { typeof(PickEntityToAddOnStartComponent), 79 },
+            { typeof(PlayAnimationOnRuleComponent), 80 },
+            { typeof(PolygonSpriteComponent), 81 },
+            { typeof(PrefabRefComponent), 82 },
+            { typeof(PushAwayComponent), 83 },
+            { typeof(QuadtreeComponent), 84 },
+            { typeof(QuestTrackerComponent), 85 },
+            { typeof(QuestTrackerRuntimeComponent), 86 },
+            { typeof(RandomizeSpriteComponent), 87 },
+            { typeof(RectPositionComponent), 88 },
+            { typeof(ReflectionComponent), 89 },
+            { typeof(RemoveColliderWhenStoppedComponent), 90 },
+            { typeof(RemoveEntityOnRuleMatchAtLoadComponent), 91 },
+            { typeof(RequiresVisionComponent), 92 },
+            { typeof(RoomComponent), 93 },
+            { typeof(RotateComponent), 94 },
+            { typeof(RouteComponent), 95 },
+            { typeof(RuleWatcherComponent), 96 },
+            { typeof(ScaleComponent), 97 },
+            { typeof(SituationComponent), 98 },
+            { typeof(SoundComponent), 99 },
+            { typeof(SoundParameterComponent), 100 },
+            { typeof(SoundWatcherComponent), 101 },
+            { typeof(SpeakerComponent), 102 },
+            { typeof(SpriteComponent), 103 },
+            { typeof(StateWatcherComponent), 104 },
+            { typeof(StaticComponent), 105 },
+            { typeof(StrafingComponent), 106 },
+            { typeof(TextureComponent), 107 },
+            { typeof(ThreeSliceComponent), 108 },
+            { typeof(TileGridComponent), 109 },
+            { typeof(TilesetComponent), 110 },
+            { typeof(TintComponent), 111 },
+            { typeof(UiDisplayComponent), 112 },
+            { typeof(VelocityComponent), 113 },
+            { typeof(VerticalPositionComponent), 114 },
+            { typeof(WaitForVacancyComponent), 115 },
+            { typeof(WindowRefreshTrackerComponent), 116 },
+            { typeof(IStateMachineComponent), 117 },
+            { typeof(IInteractiveComponent), 118 },
+            { typeof(IMurderTransformComponent), 119 },
+            { typeof(ITransformComponent), 119 },
+            { typeof(PlayerComponent), 135 },
+            { typeof(StateMachineComponent<Coroutine>), 117 },
+            { typeof(StateMachineComponent<DialogStateMachine>), 117 },
+            { typeof(InteractiveComponent<AddChildOnInteraction>), 118 },
+            { typeof(InteractiveComponent<AddComponentOnInteraction>), 118 },
+            { typeof(InteractiveComponent<AddEntityOnInteraction>), 118 },
+            { typeof(InteractiveComponent<AdvancedBlackboardInteraction>), 118 },
+            { typeof(InteractiveComponent<BlackboardActionInteraction>), 118 },
+            { typeof(InteractiveComponent<DebugInteraction>), 118 },
+            { typeof(InteractiveComponent<EnableChildrenInteraction>), 118 },
+            { typeof(InteractiveComponent<InteractChildOnInteraction>), 118 },
+            { typeof(InteractiveComponent<InteractionCollection>), 118 },
+            { typeof(InteractiveComponent<PlayMusicInteraction>), 118 },
+            { typeof(InteractiveComponent<PlaySoundInteraction>), 118 },
+            { typeof(InteractiveComponent<RemoveEntityOnInteraction>), 118 },
+            { typeof(InteractiveComponent<SendToOtherInteraction>), 118 },
+            { typeof(InteractiveComponent<SendToParentInteraction>), 118 },
+            { typeof(InteractiveComponent<SetPositionInteraction>), 118 },
+            { typeof(InteractiveComponent<SetSoundOnInteraction>), 118 },
+            { typeof(InteractiveComponent<StopMusicInteraction>), 118 },
+            { typeof(InteractiveComponent<TalkToInteraction>), 118 },
+            { typeof(PositionComponent), 119 },
+            { typeof(StateMachineComponent<MainMenuStateMachine>), 117 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> ComponentsIndex => _componentsIndex;
 
         private static readonly ImmutableDictionary<Type, int> _messagesIndex = new Dictionary<Type, int>()
         {
-            { typeof(AnimationCompleteMessage), 118 },
-            { typeof(AnimationEventMessage), 119 },
-            { typeof(CollidedWithMessage), 120 },
-            { typeof(FatalDamageMessage), 121 },
-            { typeof(HighlightMessage), 122 },
-            { typeof(InteractMessage), 123 },
-            { typeof(InteractorMessage), 124 },
-            { typeof(IsInsideOfMessage), 125 },
-            { typeof(NextDialogMessage), 126 },
-            { typeof(OnActorEnteredOrExitedMessage), 127 },
-            { typeof(OnInteractExitMessage), 128 },
-            { typeof(OnTriggerEnteredMessage), 129 },
-            { typeof(PathNotPossibleMessage), 130 },
-            { typeof(PickChoiceMessage), 131 },
-            { typeof(TouchedGroundMessage), 132 },
-            { typeof(AgentInputMessage), 134 },
-            { typeof(AgentReleaseInputMessage), 135 }
+            { typeof(AnimationCompleteMessage), 120 },
+            { typeof(AnimationEventMessage), 121 },
+            { typeof(CollidedWithMessage), 122 },
+            { typeof(FatalDamageMessage), 123 },
+            { typeof(HighlightMessage), 124 },
+            { typeof(InteractMessage), 125 },
+            { typeof(InteractorMessage), 126 },
+            { typeof(IsInsideOfMessage), 127 },
+            { typeof(NextDialogMessage), 128 },
+            { typeof(OnActorEnteredOrExitedMessage), 129 },
+            { typeof(OnInteractExitMessage), 130 },
+            { typeof(OnTriggerEnteredMessage), 131 },
+            { typeof(PathNotPossibleMessage), 132 },
+            { typeof(PickChoiceMessage), 133 },
+            { typeof(TouchedGroundMessage), 134 },
+            { typeof(AgentInputMessage), 136 },
+            { typeof(AgentReleaseInputMessage), 137 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> MessagesIndex => _messagesIndex;
