@@ -7,22 +7,9 @@ namespace HelloMurder.Components
     [DoNotPersistEntityOnSave]
     public readonly struct PlayerComponent : IComponent
     {
-        public readonly PlayerStates CurrentState;
-
-        public PlayerComponent(PlayerStates state)
+        public PlayerComponent()
         {
-            CurrentState = state;
         }
-
-        internal PlayerComponent SetState(PlayerStates state)
-        {
-            return new PlayerComponent(state);
-        }
-    }
-
-    public enum PlayerStates
-    {
-        Normal,
-        Casting,
     }
 }
+
