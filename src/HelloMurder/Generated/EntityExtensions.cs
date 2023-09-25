@@ -36,53 +36,32 @@ namespace Bang.Entities
 {
     public enum HelloMurderComponentType
     {
-        Mesh = 135,
-        Player = 136
+        Player = 135
     }
 
     public enum HelloMurderMessageType
     {
-        AgentInput = 137,
-        AgentReleaseInput = 138
+        AgentInput = 136,
+        AgentReleaseInput = 137
     }
 
     public static class HelloMurderEntityExtensions
     {
         #region Component "Get" methods!
-        public static MeshComponent GetMesh(this Entity e)
-        {
-            return e.GetComponent<MeshComponent>(135);
-        }
-
         public static PlayerComponent GetPlayer(this Entity e)
         {
-            return e.GetComponent<PlayerComponent>(136);
+            return e.GetComponent<PlayerComponent>(135);
         }
         #endregion
         
         #region Component "Has" checkers!
-        public static bool HasMesh(this Entity e)
-        {
-            return e.HasComponent(135);
-        }
-
         public static bool HasPlayer(this Entity e)
         {
-            return e.HasComponent(136);
+            return e.HasComponent(135);
         }
         #endregion
         
         #region Component "TryGet" methods!
-        public static MeshComponent? TryGetMesh(this Entity e)
-        {
-            if (!e.HasMesh())
-            {
-                return null;
-            }
-
-            return e.GetMesh();
-        }
-
         public static PlayerComponent? TryGetPlayer(this Entity e)
         {
             if (!e.HasPlayer())
@@ -95,48 +74,33 @@ namespace Bang.Entities
         #endregion
         
         #region Component "Set" methods!
-        public static void SetMesh(this Entity e, MeshComponent component)
+        public static void SetPlayer(this Entity e, PlayerComponent component)
         {
             e.AddOrReplaceComponent(component, 135);
         }
 
-        public static void SetMesh(this Entity e)
-        {
-            e.AddOrReplaceComponent(new MeshComponent(), 135);
-        }
-
-        public static void SetPlayer(this Entity e, PlayerComponent component)
-        {
-            e.AddOrReplaceComponent(component, 136);
-        }
-
         public static void SetPlayer(this Entity e)
         {
-            e.AddOrReplaceComponent(new PlayerComponent(), 136);
+            e.AddOrReplaceComponent(new PlayerComponent(), 135);
         }
         #endregion
         
         #region Component "Remove" methods!
-        public static bool RemoveMesh(this Entity e)
-        {
-            return e.RemoveComponent(135);
-        }
-
         public static bool RemovePlayer(this Entity e)
         {
-            return e.RemoveComponent(136);
+            return e.RemoveComponent(135);
         }
         #endregion
 
         #region Message "Has" checkers!
         internal static bool HasAgentInputMessage(this Entity e)
         {
-            return e.HasMessage(137);
+            return e.HasMessage(136);
         }
 
         internal static bool HasAgentReleaseInputMessage(this Entity e)
         {
-            return e.HasMessage(138);
+            return e.HasMessage(137);
         }
         #endregion
     }
@@ -275,8 +239,7 @@ namespace Bang.Entities
             { typeof(IInteractiveComponent), 118 },
             { typeof(IMurderTransformComponent), 119 },
             { typeof(ITransformComponent), 119 },
-            { typeof(MeshComponent), 135 },
-            { typeof(PlayerComponent), 136 },
+            { typeof(PlayerComponent), 135 },
             { typeof(StateMachineComponent<Coroutine>), 117 },
             { typeof(StateMachineComponent<DialogStateMachine>), 117 },
             { typeof(InteractiveComponent<AddChildOnInteraction>), 118 },
@@ -320,8 +283,8 @@ namespace Bang.Entities
             { typeof(PathNotPossibleMessage), 132 },
             { typeof(PickChoiceMessage), 133 },
             { typeof(TouchedGroundMessage), 134 },
-            { typeof(AgentInputMessage), 137 },
-            { typeof(AgentReleaseInputMessage), 138 }
+            { typeof(AgentInputMessage), 136 },
+            { typeof(AgentReleaseInputMessage), 137 }
         }.ToImmutableDictionary();
 
         protected override ImmutableDictionary<Type, int> MessagesIndex => _messagesIndex;
