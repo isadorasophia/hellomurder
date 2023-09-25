@@ -38,11 +38,6 @@ namespace HelloMurder.Systems
             foreach (Entity entity in context.Entities)
             {
                 PlayerComponent player = entity.GetComponent<PlayerComponent>();
-                if (player.CurrentState != PlayerStates.Normal)
-                {
-                    // Skip movement if the player is casting a spell
-                    continue;
-                }
 
                 bool moved = _cachedInputAxis.HasValue();
                 
