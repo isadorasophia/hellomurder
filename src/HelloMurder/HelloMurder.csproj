@@ -35,13 +35,14 @@
     <ProjectReference Include="..\..\murder\src\Murder\Murder.csproj" />
   </ItemGroup>
 
-  <!-- Bang analyzers and generators! -->
   <ItemGroup>
-    <ProjectReference Include="..\..\murder\bang\src\Bang.Analyzers\Bang.Analyzers.csproj">
+    <!-- Pretty analyzers! -->
+    <ProjectReference Condition="'$(Configuration)' == 'Debug'" Include="..\..\murder\bang\src\Bang.Analyzers\Bang.Analyzers.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>
 
+    <!-- And generators! -->
     <ProjectReference Include="..\..\murder\bang\src\Bang.Generator\Bang.Generator.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
