@@ -7,32 +7,32 @@
       {
         "$type": "Murder.Core.Graphics.AtlasCoordinates, Murder",
         "AtlasIndex": 0,
-        "Name": "tiles\\checkered_floor",
+        "Name": "tiles\\simple",
         "Size": {
           "$type": "Murder.Core.Geometry.Point, Murder",
-          "X": 24,
-          "Y": 24
+          "X": 72,
+          "Y": 120
         },
         "SourceRectangle": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
-          "X": 0,
-          "Y": 170,
-          "Width": 24,
-          "Height": 24
+          "X": 73,
+          "Y": 0,
+          "Width": 72,
+          "Height": 108
         },
         "UV": {
           "$type": "Murder.Core.Geometry.Rectangle, Murder",
-          "X": 0.0,
-          "Y": 0.6640625,
-          "Width": 0.09375,
-          "Height": 0.09375
+          "X": 0.28515625,
+          "Y": 0.0,
+          "Width": 0.28125,
+          "Height": 0.421875
         },
         "TrimArea": {
           "$type": "Murder.Core.Geometry.IntRectangle, Murder",
           "X": 0,
-          "Y": 0,
-          "Width": 24,
-          "Height": 24
+          "Y": 12,
+          "Width": 72,
+          "Height": 108
         },
         "AtlasId": 1
       }
@@ -67,8 +67,8 @@
   },
   "Size": {
     "$type": "Murder.Core.Geometry.Point, Murder",
-    "X": 24,
-    "Y": 24
+    "X": 72,
+    "Y": 120
   },
   "NineSlice": {
     "$type": "Murder.Core.Geometry.Rectangle, Murder",
@@ -77,6 +77,7 @@
     "Width": 0.0,
     "Height": 0.0
   },
-  "Name": "tiles\\checkered_floor",
-  "Guid": "bb95d6e2-0aba-477e-bec0-3e0be65be8ab"
+  "_editorPath": "#Generated\\images",
+  "Name": "tiles\\simple",
+  "Guid": "98d1de98-3aba-300a-e7cc-64e4a6a93f45"
 }

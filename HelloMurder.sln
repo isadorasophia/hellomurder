@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gum", "murder\gum\src\Gum\G
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bang.Analyzers", "murder\bang\src\Bang.Analyzers\Bang.Analyzers.csproj", "{C51E87B2-3F6C-447F-9A48-9D21D7529EF0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Murder.Analyzers", "murder\src\Murder.Analyzers\Murder.Analyzers.csproj", "{947279EA-7659-4F04-A396-77DA59DA0FD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{C51E87B2-3F6C-447F-9A48-9D21D7529EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C51E87B2-3F6C-447F-9A48-9D21D7529EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C51E87B2-3F6C-447F-9A48-9D21D7529EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947279EA-7659-4F04-A396-77DA59DA0FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947279EA-7659-4F04-A396-77DA59DA0FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947279EA-7659-4F04-A396-77DA59DA0FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947279EA-7659-4F04-A396-77DA59DA0FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{D0180438-59CB-4291-9669-0866B28AB122} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 		{E9C49892-667F-4541-8F2D-2F5EDD36B6FD} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 		{C51E87B2-3F6C-447F-9A48-9D21D7529EF0} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
+		{947279EA-7659-4F04-A396-77DA59DA0FD7} = {DBBB6080-5D83-4376-AA7B-351D41E56456}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19CF3A5B-68E0-4F31-A74A-E49966DBD717}
