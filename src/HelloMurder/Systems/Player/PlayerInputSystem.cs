@@ -10,7 +10,7 @@ namespace HelloMurder.Systems
     /// <summary>
     ///     System intended to capture and relay player inputs to entities.
     ///     System is called during frame updates and fixed updates thanks to interfaces.<br/>
-    ///     Targets only enties with <b>both</b> PlayerComponent and AgentComponent
+    ///     Targets only entities with <b>both</b> PlayerComponent and AgentComponent
     ///     Example usage:<br/>
     ///     1. Poll input system with: <br/>
     ///         Game.Input <see cref="Game.Input"/><br/>
