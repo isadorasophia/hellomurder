@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -20,6 +20,20 @@
   <ItemGroup>
     <None Remove="resources\Icon.bmp" />
     <None Remove="resources\Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="loc\LocalizedResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalizedResources.resx</DependentUpon>
+    </Content>
+    <Content Include="loc\LocalizedResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>HelloMurder</CustomToolNamespace>
+    </Content>
+    <Content Include="loc\LocalizedResources.pt-BR.resx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +61,14 @@
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="loc\LocalizedResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalizedResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -22,9 +22,13 @@
       "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
       "$values": [
         "5d34f9a7-91d0-4142-82eb-9e1393c88297",
-        "220b08d1-2193-4cfa-800f-8582eba2c0df"
+        "220b08d1-2193-4cfa-800f-8582eba2c0df",
+        "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc"
       ]
     }
+  },
+  "_filterFolders": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
   },
   "_entities": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
@@ -647,12 +651,38 @@
       "ActivateWithParent": false,
       "_guid": "ad4db301-6039-4d5d-ad89-28c5cd5f03ba",
       "_name": "Camera man"
+    },
+    "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc": {
+      "$type": "Murder.Prefabs.EntityInstance, Murder",
+      "_guid": "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
+      "_name": "Test",
+      "_components": {
+        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
+        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Murder.Components.PositionComponent, Murder",
+          "_x": 118.0,
+          "_y": 125.0
+        },
+        "HelloMurder.Components.InteractHighlighterComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.InteractHighlighterComponent, HelloMurder",
+          "Title": {
+            "$type": "Murder.Assets.LocalizedString, Murder",
+            "Id": "a551bf5c-917f-4a82-b8be-b35d3a63f91d"
+          }
+        }
+      },
+      "IsDeactivated": false,
+      "ActivateWithParent": false
     }
   },
   "_entitiesToFolder": {
     "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
     "5d34f9a7-91d0-4142-82eb-9e1393c88297": "Room",
-    "220b08d1-2193-4cfa-800f-8582eba2c0df": "Room"
+    "220b08d1-2193-4cfa-800f-8582eba2c0df": "Room",
+    "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc": "Room"
+  },
+  "_entitiesToFilter": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
   },
   "Name": "Hello World",
   "Guid": "3bd26720-c3b1-44c1-b7c3-192d5656cc37"

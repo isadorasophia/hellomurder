@@ -1,0 +1,12 @@
+{
+  "$type": "Murder.Assets.Localization.LocalizationAsset, Murder",
+  "_resources": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Assets.Localization.LocalizedStringData, Murder]], System.Collections.Immutable",
+    "a551bf5c-917f-4a82-b8be-b35d3a63f91d": {
+      "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+      "String": "o....!!!"
+    }
+  },
+  "Name": "Global",
+  "Guid": "7d177194-8c19-4943-a9e7-9c89db1a2786"
+}

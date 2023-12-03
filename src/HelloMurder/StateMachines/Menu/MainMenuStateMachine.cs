@@ -3,12 +3,14 @@ using Bang.StateMachines;
 using HelloMurder.Core;
 using Murder;
 using Murder.Assets;
+using Murder.Assets.Localization;
 using Murder.Attributes;
 using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace HelloMurder.StateMachines
 {
@@ -20,13 +22,15 @@ namespace HelloMurder.StateMachines
         private MenuInfo _menuInfo = new();
 
         private MenuInfo GetMainMenuOptions() =>
-            new MenuInfo(new MenuOption[] { new("Continue", selectable: MurderSaveServices.CanLoadSave()), new("New Game"), new("Options"), new("Exit") });
+            new MenuInfo(new MenuOption[] { new(LocalizedResources.Menu_Continue, selectable: MurderSaveServices.CanLoadSave()), 
+                new(LocalizedResources.Menu_NewGame), new(LocalizedResources.Menu_Options), new(LocalizedResources.Menu_Exit) });
 
         private MenuInfo GetOptionOptions() =>
-            new MenuInfo(new MenuOption[] {
-                new(Game.Preferences.SoundVolume == 1 ? "Sounds on" : "Sounds off"),
-                new(Game.Preferences.MusicVolume == 1 ? "Music on" : "Music off"),
-                new("Back to menu") });
+            new(new MenuOption[] {
+                new(Game.Preferences.SoundVolume == 1 ? LocalizedResources.Menu_SoundsOn : LocalizedResources.Menu_SoundsOff),
+                new(Game.Preferences.MusicVolume == 1 ? LocalizedResources.Menu_MusicOn : LocalizedResources.Menu_MusicOff),
+                new(LocalizedResources.Menu_CurrentLanguage),
+                new(LocalizedResources.Menu_BackToMenu) });
 
         public MainMenuStateMachine()
         {
@@ -93,16 +97,24 @@ namespace HelloMurder.StateMachines
                         case 0: // Tweak sound
                             float volume = Game.Preferences.ToggleSoundVolumeAndSave();
 
-                            _menuInfo.Options[0] = volume == 1 ? new("Sounds on") : new("Sounds off");
+                            _menuInfo.Options[0] = volume == 1 ? new(LocalizedResources.Menu_SoundsOn) : new(LocalizedResources.Menu_SoundsOff);
                             break;
 
                         case 1: // Tweak music
                             float sound = Game.Preferences.ToggleMusicVolumeAndSave();
 
-                            _menuInfo.Options[1] = sound == 1 ? new("Music on") : new("Music off");
+                            _menuInfo.Options[1] = sound == 1 ? new(LocalizedResources.Menu_MusicOn) : new(LocalizedResources.Menu_MusicOff);
                             break;
 
-                        case 2: // Go back
+                        case 2: // Language
+                            SwitchLanguage();
+
+                            _menuInfo = GetOptionOptions();
+                            _menuInfo.Select(2);
+
+                            break;
+
+                        case 3: // Go back
                             yield return GoTo(Main);
                             break;
                             
@@ -113,6 +125,12 @@ namespace HelloMurder.StateMachines
 
                 yield return Wait.NextFrame;
             }
+        }
+
+        private void SwitchLanguage()
+        {
+            Game.Preferences.Language = Languages.Next(Game.Preferences.Language);
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Game.Preferences.Language.Identifier);
         }
 
         private void DrawMainMenu(RenderContext render)

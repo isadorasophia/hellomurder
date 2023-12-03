@@ -14,12 +14,15 @@
   "GameWidth": 320,
   "GameHeight": 180,
   "GameScale": 2,
+  "_enforceResolution": false,
+  "_scalingFilter": false,
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2.0,
   "IsVSyncEnabled": false,
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
+  "DefaultGridCellSize": 24,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
   "Theme": {
     "$type": "Murder.Assets.Theme, Murder",
@@ -210,7 +213,8 @@
     "A": 1.0
   },
   "DefaultPalette": "images/murder_palette",
-  "MissingImage": "485a9a13-e62b-7215-dbc3-9e1df4bcba73",
+  "MissingImage": "3c4ec0fa-0d0c-4f0f-9cb7-079bb9734a26",
+  "DefaultLocalization": "7d177194-8c19-4943-a9e7-9c89db1a2786",
   "Name": "Game Profile",
   "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f"
 }
