@@ -129,8 +129,7 @@ namespace HelloMurder.StateMachines
 
         private void SwitchLanguage()
         {
-            Game.Preferences.Language = Languages.Next(Game.Preferences.Language);
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(Game.Preferences.Language.Identifier);
+            Game.Data.ChangeLanguage(Languages.Next(Game.Preferences.Language));
         }
 
         private void DrawMainMenu(RenderContext render)

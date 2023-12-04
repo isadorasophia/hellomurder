@@ -214,7 +214,11 @@
   },
   "DefaultPalette": "images/murder_palette",
   "MissingImage": "3c4ec0fa-0d0c-4f0f-9cb7-079bb9734a26",
-  "DefaultLocalization": "7d177194-8c19-4943-a9e7-9c89db1a2786",
+  "LocalizationResources": {
+    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[Murder.Assets.Localization.LanguageId, Murder],[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+    "English": "5d9f396c-b97f-4df4-8652-659271480888",
+    "Portuguese": "2854e482-234f-4ab2-93c1-8901e416e63a"
+  },
   "Name": "Game Profile",
   "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f"
 }

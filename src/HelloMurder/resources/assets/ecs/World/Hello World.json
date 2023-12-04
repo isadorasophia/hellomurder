@@ -663,11 +663,11 @@
           "_x": 118.0,
           "_y": 125.0
         },
-        "HelloMurder.Components.InteractHighlighterComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "HelloMurder.Components.InteractHighlighterComponent, HelloMurder",
-          "Title": {
+        "HelloMurder.Components.DialogueUiComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "HelloMurder.Components.DialogueUiComponent, HelloMurder",
+          "Content": {
             "$type": "Murder.Assets.LocalizedString, Murder",
-            "Id": "a551bf5c-917f-4a82-b8be-b35d3a63f91d"
+            "Id": "a471e436-2e04-4183-a907-f980badc13bb"
           }
         }
       },
