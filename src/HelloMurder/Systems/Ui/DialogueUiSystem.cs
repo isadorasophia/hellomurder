@@ -17,9 +17,11 @@ namespace HelloMurder.Systems
     [Watch(typeof(DialogueUiComponent))]
     internal class DialogueUiSystem : IReactiveSystem, IMurderRenderSystem
     {
-        private readonly float _duration = 2;
+        private readonly float _duration = .8f;
+        private readonly float _screenTime = 2.4f;
 
-        private float _timeAdded = 0;
+        private float _timeUpdated = 0;
+        private int _currentIndex = 0;
 
         public void Draw(RenderContext render, Context context)
         {
@@ -29,10 +31,27 @@ namespace HelloMurder.Systems
             }
 
             DialogueUiComponent dialogue = context.Entity.GetDialogueUi();
-            string content = LocalizationServices.GetLocalizedString(dialogue.Content);
+            if (_currentIndex >= dialogue.Content.Length)
+            {
+                return;
+            }
 
-            float timeSinceAppeared = Game.NowUnscaled - _timeAdded;
-            int currentLength = Calculator.CeilToInt(Calculator.ClampTime(timeSinceAppeared, _duration) * content.Length);
+            string content = LocalizationServices.GetLocalizedString(dialogue.Content[_currentIndex]);
+
+            float timeSinceAppeared = Game.NowUnscaled - _timeUpdated;
+
+            int currentLength = Calculator.RoundToInt(Calculator.ClampTime(timeSinceAppeared, _duration) * content.Length);
+            if (timeSinceAppeared > _screenTime)
+            {
+                if (_currentIndex + 1 >= dialogue.Content.Length)
+                {
+                    context.Entity.RemoveDialogueUi();
+                }
+
+                // Move on with the next line.
+                _currentIndex++;
+                _timeUpdated = Game.NowUnscaled;
+            }
 
             int font = (int)MurderFonts.PixelFont;
 
@@ -53,7 +72,8 @@ namespace HelloMurder.Systems
 
         public void OnAdded(World world, ImmutableArray<Entity> entities)
         {
-            _timeAdded = Game.NowUnscaled;
+            _timeUpdated = Game.NowUnscaled;
+            _currentIndex = 0;
         }
 
         public void OnModified(World world, ImmutableArray<Entity> entities) { }

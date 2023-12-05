@@ -4,26 +4,25 @@
     "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Assets.Localization.LocalizedStringData, Murder]], System.Collections.Immutable",
     "ee48fead-e299-4ba1-be2f-ffe5f939abc1": {
       "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "This is a hello world.",
+      "String": "Isso é um olá mundo.",
       "Counter": 1
     },
     "4ad3b8dc-1855-4ebc-b9ed-75e008dc4e48": {
       "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "Okay, bye!",
+      "String": "Okay, tchau!",
       "Counter": 1
     },
     "51db70bd-2a24-40b4-82b6-e0f68b7a6d14": {
       "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "As you may have noticed.",
+      "String": "Como você deve ter percebido.",
       "Counter": 1
     },
     "340070e9-3d17-43bd-8548-5c7cfdc33024": {
       "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "I needed strings to test this.",
-      "Counter": 1,
-      "Notes": "This is for..."
+      "String": "Eu precisava de strings pra testar essa parte...",
+      "Counter": 1
     }
   },
-  "Name": "Resource-en-US",
-  "Guid": "5d9f396c-b97f-4df4-8652-659271480888"
+  "Name": "Resource-pt-BR",
+  "Guid": "2854e482-234f-4ab2-93c1-8901e416e63a"
 }

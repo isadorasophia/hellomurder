@@ -666,8 +666,25 @@
         "HelloMurder.Components.DialogueUiComponent, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
           "$type": "HelloMurder.Components.DialogueUiComponent, HelloMurder",
           "Content": {
-            "$type": "Murder.Assets.LocalizedString, Murder",
-            "Id": "a471e436-2e04-4183-a907-f980badc13bb"
+            "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Assets.LocalizedString, Murder]], System.Collections.Immutable",
+            "$values": [
+              {
+                "$type": "Murder.Assets.LocalizedString, Murder",
+                "Id": "ee48fead-e299-4ba1-be2f-ffe5f939abc1"
+              },
+              {
+                "$type": "Murder.Assets.LocalizedString, Murder",
+                "Id": "51db70bd-2a24-40b4-82b6-e0f68b7a6d14"
+              },
+              {
+                "$type": "Murder.Assets.LocalizedString, Murder",
+                "Id": "340070e9-3d17-43bd-8548-5c7cfdc33024"
+              },
+              {
+                "$type": "Murder.Assets.LocalizedString, Murder",
+                "Id": "4ad3b8dc-1855-4ebc-b9ed-75e008dc4e48"
+              }
+            ]
           }
         }
       },
