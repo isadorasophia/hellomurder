@@ -1,27 +1,14 @@
 {
   "$type": "Murder.Assets.Localization.LocalizationAsset, Murder",
   "_resources": {
-    "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Assets.Localization.LocalizedStringData, Murder]], System.Collections.Immutable",
-    "ee48fead-e299-4ba1-be2f-ffe5f939abc1": {
-      "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "Isso é um olá mundo.",
-      "Counter": 1
-    },
-    "4ad3b8dc-1855-4ebc-b9ed-75e008dc4e48": {
-      "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "Okay, tchau!",
-      "Counter": 1
-    },
-    "51db70bd-2a24-40b4-82b6-e0f68b7a6d14": {
-      "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "Como você deve ter percebido.",
-      "Counter": 1
-    },
-    "340070e9-3d17-43bd-8548-5c7cfdc33024": {
-      "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-      "String": "Eu precisava de strings pra testar essa parte...",
-      "Counter": 1
-    }
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Assets.Localization.LocalizedStringData, Murder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "a11979d7-ac60-453c-ab3f-b8ef70e42dd5",
+        "String": "asdsdfsdf"
+      }
+    ]
   },
   "Name": "Resource-pt-BR",
   "Guid": "2854e482-234f-4ab2-93c1-8901e416e63a"
