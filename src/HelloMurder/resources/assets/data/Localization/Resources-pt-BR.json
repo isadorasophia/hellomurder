@@ -5,11 +5,12 @@
     "$values": [
       {
         "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
-        "Guid": "a11979d7-ac60-453c-ab3f-b8ef70e42dd5",
-        "String": "asdsdfsdf"
+        "Guid": "892db261-ec18-41ff-ba71-65094f89495e",
+        "String": "Olá! Ok.",
+        "Notes": "Soma"
       }
     ]
   },
-  "Name": "Resource-pt-BR",
-  "Guid": "2854e482-234f-4ab2-93c1-8901e416e63a"
+  "Name": "Resources-pt-BR",
+  "Guid": "4219ee72-8fb3-467f-adfc-b0116ff2f048"
 }
