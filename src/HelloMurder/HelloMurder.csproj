@@ -69,6 +69,7 @@
 
   <ItemGroup>
     <Folder Include="resources\assets\data\Localization\" />
+    <Folder Include="resources\assets\data\Story\Characters\" />
   </ItemGroup>
 
 </Project>

@@ -37,7 +37,10 @@
               "$values": [
                 {
                   "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": "Welcome to Murder Engine."
+                  "Text": {
+                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
+                    "Id": "40f7d8c1-b986-4d47-9469-3a67e511c854"
+                  }
                 }
               ]
             },
@@ -57,7 +60,24 @@
               "$values": [
                 {
                   "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": "Please, make yourself home."
+                  "Text": {
+                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
+                    "Id": "a0177851-ca14-4e22-85f4-2078c4ae8bf7"
+                  }
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": {
+                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
+                    "Id": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed"
+                  }
+                },
+                {
+                  "$type": "Murder.Core.Dialogs.Line, Murder",
+                  "Text": {
+                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
+                    "Id": "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
+                  }
                 }
               ]
             },
@@ -90,5 +110,5 @@
     "$values": []
   },
   "Name": "Hello",
-  "Guid": "e03acec0-079d-40d4-a760-0e7b01e81eda"
+  "Guid": "a76c51b9-e048-46d3-a66f-616e636336ee"
 }
