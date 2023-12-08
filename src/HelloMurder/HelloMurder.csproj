@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -9,6 +9,10 @@
 
     <!-- Investigate if we need this -->
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+
+    <!-- Workaround for hot reload breaking due to AssemblyAttribute. 
+    See https://github.com/dotnet/sdk/issues/36666 -->
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
   </PropertyGroup>
   
   <!-- Resources -->
@@ -20,6 +24,21 @@
   <ItemGroup>
     <None Remove="resources\Icon.bmp" />
     <None Remove="resources\Icon.ico" />
+  </ItemGroup>
+
+  <!-- Example for localization resources in english and portuguese -->
+  <ItemGroup>
+    <Content Include="loc\LocalizedResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalizedResources.resx</DependentUpon>
+    </Content>
+    <Content Include="loc\LocalizedResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>HelloMurder</CustomToolNamespace>
+    </Content>
+    <Content Include="loc\LocalizedResources.pt-BR.resx" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,65 @@
+{
+  "$type": "Murder.Assets.Localization.LocalizationAsset, Murder",
+  "_resources": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Assets.Localization.LocalizedStringData, Murder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "892db261-ec18-41ff-ba71-65094f89495e",
+        "String": "Olá!",
+        "Notes": "Soma",
+        "IsGenerated": false
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "40f7d8c1-b986-4d47-9469-3a67e511c854",
+        "String": "Bem-vindo a Murder Engine.",
+        "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "a0177851-ca14-4e22-85f4-2078c4ae8bf7",
+        "String": "Sinta-se a vontade.",
+        "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "456d30c3-11b3-4e2c-ba3e-005a4f950d79",
+        "String": "Certo?",
+        "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed",
+        "String": "Okay.",
+        "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "6693dcc2-7876-4e4e-a10b-aaf93d814759",
+        "String": "Isso é tudo por enquanto.",
+        "IsGenerated": false
+      }
+    ]
+  },
+  "_dialogueResources": {
+    "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Assets.Localization.LocalizationAsset+ResourceDataForAsset, Murder]], System.Collections.Immutable",
+    "$values": [
+      {
+        "$type": "Murder.Assets.Localization.LocalizationAsset+ResourceDataForAsset, Murder",
+        "DialogueResourceGuid": "a76c51b9-e048-46d3-a66f-616e636336ee",
+        "Resources": {
+          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable",
+          "$values": [
+            "40f7d8c1-b986-4d47-9469-3a67e511c854",
+            "a0177851-ca14-4e22-85f4-2078c4ae8bf7",
+            "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed",
+            "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
+          ]
+        }
+      }
+    ]
+  },
+  "Name": "Resources-pt-BR",
+  "Guid": "4219ee72-8fb3-467f-adfc-b0116ff2f048"
+}
