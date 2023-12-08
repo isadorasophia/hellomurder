@@ -671,6 +671,10 @@
               {
                 "$type": "Murder.Assets.LocalizedString, Murder",
                 "Id": "892db261-ec18-41ff-ba71-65094f89495e"
+              },
+              {
+                "$type": "Murder.Assets.LocalizedString, Murder",
+                "Id": "6693dcc2-7876-4e4e-a10b-aaf93d814759"
               }
             ]
           }

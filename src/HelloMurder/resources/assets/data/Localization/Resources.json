@@ -6,7 +6,7 @@
       {
         "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
         "Guid": "892db261-ec18-41ff-ba71-65094f89495e",
-        "String": "Hello!",
+        "String": "Welcome to Murder!",
         "IsGenerated": false
       },
       {
@@ -32,6 +32,12 @@
         "Guid": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed",
         "String": "Sure.",
         "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "6693dcc2-7876-4e4e-a10b-aaf93d814759",
+        "String": "That is all for now.",
+        "IsGenerated": false
       }
     ]
   },

@@ -25,14 +25,20 @@
       {
         "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
         "Guid": "456d30c3-11b3-4e2c-ba3e-005a4f950d79",
-        "String": "Right?",
+        "String": "Certo?",
         "IsGenerated": true
       },
       {
         "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
         "Guid": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed",
-        "String": "Sure.",
+        "String": "Okay.",
         "IsGenerated": true
+      },
+      {
+        "$type": "Murder.Assets.Localization.LocalizedStringData, Murder",
+        "Guid": "6693dcc2-7876-4e4e-a10b-aaf93d814759",
+        "String": "Isso é tudo por enquanto.",
+        "IsGenerated": false
       }
     ]
   },
