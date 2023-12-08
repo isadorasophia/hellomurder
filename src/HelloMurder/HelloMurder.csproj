@@ -26,6 +26,7 @@
     <None Remove="resources\Icon.ico" />
   </ItemGroup>
 
+  <!-- Example for localization resources in english and portuguese -->
   <ItemGroup>
     <Content Include="loc\LocalizedResources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -65,11 +66,6 @@
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="resources\assets\data\Localization\" />
-    <Folder Include="resources\assets\data\Story\Characters\" />
   </ItemGroup>
 
 </Project>
