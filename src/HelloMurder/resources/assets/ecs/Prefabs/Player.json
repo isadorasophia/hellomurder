@@ -18,19 +18,19 @@
         "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
         "Offset": {
           "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-          "X": 0.0,
-          "Y": 0.0
+          "X": 0.5,
+          "Y": 1.0
         },
         "RotateWithFacing": false,
         "FlipWithFacing": false,
-        "CanBeHighlighted": true,
+        "HighlightStyle": 0,
         "UseUnscaledTime": false,
         "NextAnimations": {
           "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
           "$values": []
         },
-        "AnimationStartedTime": 0.0,
-        "YSortOffset": 0
+        "YSortOffset": 0,
+        "AnimationStartedTime": 0.0
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent, Murder",
@@ -44,8 +44,8 @@
               "Height": 16,
               "Origin": {
                 "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-                "X": 0.0,
-                "Y": 0.0
+                "X": 0.5,
+                "Y": 1.0
               },
               "Offset": {
                 "$type": "Murder.Core.Geometry.Point, Murder",
@@ -64,7 +64,8 @@
         }
       }
     },
-    "IsDeactivated": false
+    "IsDeactivated": false,
+    "ActivateWithParent": false
   },
   "Dimensions": {
     "$type": "Murder.Core.TileDimensions, Murder",
