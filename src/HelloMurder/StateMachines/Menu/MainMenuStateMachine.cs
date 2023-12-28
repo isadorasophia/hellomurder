@@ -22,7 +22,7 @@ namespace HelloMurder.StateMachines
         private MenuInfo _menuInfo = new();
 
         private MenuInfo GetMainMenuOptions() =>
-            new MenuInfo(new MenuOption[] { new(LocalizedResources.Menu_Continue, selectable: MurderSaveServices.CanLoadSave()), 
+            new MenuInfo(new MenuOption[] { new(LocalizedResources.Menu_Continue, selectable: Game.Data.CanLoadSaveData(0)), 
                 new(LocalizedResources.Menu_NewGame), new(LocalizedResources.Menu_Options), new(LocalizedResources.Menu_Exit) });
 
         private MenuInfo GetOptionOptions() =>
@@ -41,7 +41,7 @@ namespace HelloMurder.StateMachines
         {
             Entity.SetCustomDraw(DrawMainMenu);
 
-            _menuInfo.Select(MurderSaveServices.CanLoadSave() ? 0 : 1);
+            _menuInfo.Select(Game.Data.CanLoadSaveData(0) ? 0 : 1);
         }
 
         private IEnumerator<Wait> Main()
@@ -56,7 +56,7 @@ namespace HelloMurder.StateMachines
                     switch (_menuInfo.Selection)
                     {
                         case 0: //  Continue Game
-                            Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld();
+                            Guid? targetWorld = MurderSaveServices.LoadSaveAndFetchTargetWorld(0);
                             Game.Instance.QueueWorldTransition(targetWorld ?? _newGameWorld);
 
                             break;
