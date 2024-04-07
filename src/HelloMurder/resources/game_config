@@ -25,6 +25,7 @@
   "PushAwayInterval": 0.05,
   "DefaultGridCellSize": 24,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+  "PreloadTextures": true,
   "Theme": {
     "$type": "Murder.Assets.Theme, Murder",
     "Bg": {
