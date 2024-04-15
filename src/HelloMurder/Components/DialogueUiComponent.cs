@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 
 namespace HelloMurder.Components;
 
-internal readonly struct DialogueUiComponent : IComponent
+public readonly struct DialogueUiComponent : IComponent
 {
     public readonly ImmutableArray<LocalizedString> Content = ImmutableArray<LocalizedString>.Empty;
 

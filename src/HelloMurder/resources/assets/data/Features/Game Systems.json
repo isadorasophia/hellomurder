@@ -1,61 +1,46 @@
 {
-  "$type": "Murder.Assets.FeatureAsset, Murder",
+  "$type": "Murder.Assets.FeatureAsset",
   "IsDiagnostics": false,
-  "_systems": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": [
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "HelloMurder.Systems.DialogueUiSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      }
-    ]
-  },
-  "_features": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": [
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "91a89a0e-5a8f-46a0-a151-3887483fe566",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "26a5abaf-55e7-4041-b72a-0faf35c7e260",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "5afe8a7a-6747-4f3a-b269-3e3042cd1426",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "c7f4cffb-cba7-4605-99f4-5652705a8309",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "2a601938-48b8-4e32-844c-34c3269cfeb9",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "a0ec19ac-0497-4915-b46e-941ddee1c494",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "cae67a77-1cae-4306-9a49-18064a3abbac",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "3c9b7e32-762a-46b1-8d96-6f18c2333762",
-        "Item2": true
-      }
-    ]
-  },
   "Name": "Game Systems",
-  "Guid": "9753089a-287b-4410-ad56-873b1224930c"
+  "Guid": "9753089a-287b-4410-ad56-873b1224930c",
+  "systems": [
+    {
+      "Item1": "HelloMurder.Systems.DialogueUiSystem, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    }
+  ],
+  "features": [
+    {
+      "Item1": "91a89a0e-5a8f-46a0-a151-3887483fe566",
+      "Item2": true
+    },
+    {
+      "Item1": "26a5abaf-55e7-4041-b72a-0faf35c7e260",
+      "Item2": true
+    },
+    {
+      "Item1": "5afe8a7a-6747-4f3a-b269-3e3042cd1426",
+      "Item2": true
+    },
+    {
+      "Item1": "c7f4cffb-cba7-4605-99f4-5652705a8309",
+      "Item2": true
+    },
+    {
+      "Item1": "2a601938-48b8-4e32-844c-34c3269cfeb9",
+      "Item2": true
+    },
+    {
+      "Item1": "a0ec19ac-0497-4915-b46e-941ddee1c494",
+      "Item2": true
+    },
+    {
+      "Item1": "cae67a77-1cae-4306-9a49-18064a3abbac",
+      "Item2": true
+    },
+    {
+      "Item1": "3c9b7e32-762a-46b1-8d96-6f18c2333762",
+      "Item2": true
+    }
+  ]
 }

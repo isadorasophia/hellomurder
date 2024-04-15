@@ -1,38 +1,34 @@
 {
-  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "$type": "Murder.Assets.PrefabAsset",
   "ShowOnPrefabSelector": true,
-  "_entity": {
-    "$type": "Murder.Prefabs.EntityInstance, Murder",
-    "_guid": "468bd21e-2bed-404f-bb75-8d995436e35d",
-    "_name": "",
-    "_components": {
-      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-      "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.CameraFollowComponent, Murder",
-        "Enabled": true,
-        "Style": 0
-      },
-      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.PositionComponent, Murder",
-        "_x": 0.0,
-        "_y": 0.0
-      }
-    },
-    "IsDeactivated": false
-  },
   "Dimensions": {
-    "$type": "Murder.Core.TileDimensions, Murder",
     "Origin": {
-      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-      "X": 0.0,
-      "Y": 0.0
+      "X": 0,
+      "Y": 0
     },
     "Size": {
-      "$type": "Murder.Core.Geometry.Point, Murder",
       "X": 1,
       "Y": 1
     }
   },
   "Name": "Camera man",
-  "Guid": "fce7634c-9ba9-4279-9fa0-129fc9816287"
+  "Guid": "fce7634c-9ba9-4279-9fa0-129fc9816287",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "468bd21e-2bed-404f-bb75-8d995436e35d",
+    "name": "",
+    "components": {
+      "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.CameraFollowComponent",
+        "Enabled": true,
+        "Style": 0
+      },
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      }
+    }
+  }
 }

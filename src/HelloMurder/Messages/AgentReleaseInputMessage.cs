@@ -1,13 +1,12 @@
 ﻿using Bang.Components;
 
-namespace HelloMurder.Messages
+namespace HelloMurder.Messages;
+
+public readonly struct AgentReleaseInputMessage : IMessage
 {
-    internal readonly struct AgentReleaseInputMessage : IMessage
+    public readonly int Button;
+    public AgentReleaseInputMessage(int button)
     {
-        public readonly int Button;
-        public AgentReleaseInputMessage(int button)
-        {
-            this.Button = button;
-        }
+        this.Button = button;
     }
 }

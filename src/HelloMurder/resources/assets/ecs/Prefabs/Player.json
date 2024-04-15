@@ -1,85 +1,69 @@
 {
-  "$type": "Murder.Assets.PrefabAsset, Murder",
+  "$type": "Murder.Assets.PrefabAsset",
   "ShowOnPrefabSelector": true,
-  "_entity": {
-    "$type": "Murder.Prefabs.EntityInstance, Murder",
-    "_guid": "2119b3d4-dcb3-4086-94d9-a0209690c21d",
-    "_name": "",
-    "_components": {
-      "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.PositionComponent, Murder",
-        "_x": 0.0,
-        "_y": 0.0
-      },
-      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.SpriteComponent, Murder",
-        "TargetSpriteBatch": 0,
-        "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
-        "Offset": {
-          "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-          "X": 0.5,
-          "Y": 1.0
-        },
-        "RotateWithFacing": false,
-        "FlipWithFacing": false,
-        "HighlightStyle": 0,
-        "UseUnscaledTime": false,
-        "NextAnimations": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[System.String, System.Private.CoreLib]], System.Collections.Immutable",
-          "$values": []
-        },
-        "YSortOffset": 0,
-        "AnimationStartedTime": 0.0
-      },
-      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.ColliderComponent, Murder",
-        "Layer": 8,
-        "Shapes": {
-          "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Geometry.IShape, Murder]], System.Collections.Immutable",
-          "$values": [
-            {
-              "$type": "Murder.Core.Geometry.BoxShape, Murder",
-              "Width": 16,
-              "Height": 16,
-              "Origin": {
-                "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-                "X": 0.5,
-                "Y": 1.0
-              },
-              "Offset": {
-                "$type": "Murder.Core.Geometry.Point, Murder",
-                "X": 0,
-                "Y": 0
-              }
-            }
-          ]
-        },
-        "DebugColor": {
-          "$type": "Murder.Core.Graphics.Color, Murder",
-          "R": 1.0,
-          "G": 0.0,
-          "B": 0.0,
-          "A": 1.0
-        }
-      }
-    },
-    "IsDeactivated": false,
-    "ActivateWithParent": false
-  },
   "Dimensions": {
-    "$type": "Murder.Core.TileDimensions, Murder",
     "Origin": {
-      "$type": "System.Numerics.Vector2, System.Private.CoreLib",
-      "X": 0.0,
-      "Y": 0.0
+      "X": 0,
+      "Y": 0
     },
     "Size": {
-      "$type": "Murder.Core.Geometry.Point, Murder",
       "X": 1,
       "Y": 1
     }
   },
   "Name": "Player",
-  "Guid": "e4676d89-51f1-455e-b6b3-e85d18b7b72f"
+  "Guid": "e4676d89-51f1-455e-b6b3-e85d18b7b72f",
+  "entity": {
+    "IsDeactivated": false,
+    "ActivateWithParent": false,
+    "guid": "2119b3d4-dcb3-4086-94d9-a0209690c21d",
+    "name": "",
+    "components": {
+      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.PositionComponent",
+        "x": 0,
+        "y": 0
+      },
+      "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.SpriteComponent",
+        "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
+        "HighlightStyle": 0,
+        "NextAnimations": [],
+        "YSortOffset": 0,
+        "TargetSpriteBatch": 0,
+        "Offset": {
+          "X": 0.5,
+          "Y": 1
+        },
+        "RotateWithFacing": false,
+        "FlipWithFacing": false,
+        "UseUnscaledTime": false
+      },
+      "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Murder.Components.ColliderComponent",
+        "Layer": 8,
+        "Shapes": [
+          {
+            "$type": "Murder.Core.Geometry.BoxShape",
+            "Width": 16,
+            "Height": 16,
+            "Origin": {
+              "X": 0.5,
+              "Y": 1
+            },
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ],
+        "DebugColor": {
+          "R": 1,
+          "G": 0,
+          "B": 0,
+          "A": 1
+        }
+      }
+    }
+  }
 }

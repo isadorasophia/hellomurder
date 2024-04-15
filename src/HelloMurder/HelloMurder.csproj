@@ -3,18 +3,17 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+    
+    <PublishAot>true</PublishAot>
+    <IsTrimmable>false</IsTrimmable>
 
-    <PublishReadyToRun>false</PublishReadyToRun>
-    <TieredCompilation>false</TieredCompilation>
-
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+    
     <!-- Investigate if we need this -->
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
-
-    <!-- Workaround for hot reload breaking due to AssemblyAttribute. 
-    See https://github.com/dotnet/sdk/issues/36666 -->
-    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <GeneratorParentAssembly>Murder</GeneratorParentAssembly>
   </PropertyGroup>
-  
+
   <!-- Resources -->
   <ItemGroup>
     <Content Include="resources\**" CopyToOutputDirectory="PreserveNewest" LinkBase="resources" />
@@ -63,6 +62,14 @@
 
     <!-- And generators! -->
     <ProjectReference Include="..\..\murder\bang\src\Bang.Generator\Bang.Generator.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <OutputItemType>Analyzer</OutputItemType>
+    </ProjectReference>
+    
+    <CompilerVisibleProperty Include="GeneratorParentAssembly" />
+    
+    <!-- Serialization generator -->
+    <ProjectReference Include="..\..\murder\src\Murder.Serializer\Murder.Serializer.csproj">
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>

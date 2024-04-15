@@ -1,16 +1,16 @@
 ﻿using Bang.Components;
 
-namespace HelloMurder.Messages
+namespace HelloMurder.Messages;
+
+/// <summary>
+/// Indicates that an agent is trying to perform an action symbolized by an InputButton
+/// </summary>
+public readonly struct AgentInputMessage : IMessage
 {
-    /// <summary>
-    /// Indicates that an agent is trying to perform an action symbolized by an InputButton
-    /// </summary>
-    internal readonly struct AgentInputMessage : IMessage
+    public readonly int Button;
+
+    public AgentInputMessage(int button)
     {
-        public readonly int Button;
-        public AgentInputMessage(int button)
-        {
-            this.Button = button;
-        }
+        Button = button;
     }
 }

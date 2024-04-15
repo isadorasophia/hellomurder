@@ -1,59 +1,45 @@
 {
-  "$type": "Murder.Assets.FeatureAsset, Murder",
-  "_systems": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": [
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.DynamicInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.SpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.AgentSpriteSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.TilemapRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.CustomDrawRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.Graphics.SpriteThreeSliceRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.AnimationOnPauseSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.PolygonSpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      },
-      {
-        "$type": "System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "Murder.Systems.StaticInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "Item2": true
-      }
-    ]
-  },
-  "_features": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": []
-  },
+  "$type": "Murder.Assets.FeatureAsset",
+  "IsDiagnostics": false,
   "Name": "Render",
-  "Guid": "5afe8a7a-6747-4f3a-b269-3e3042cd1426"
+  "Guid": "5afe8a7a-6747-4f3a-b269-3e3042cd1426",
+  "systems": [
+    {
+      "Item1": "Murder.Systems.DynamicInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.SpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.AgentSpriteSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.TilemapRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.CustomDrawRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.SpriteThreeSliceRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.AnimationOnPauseSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.PolygonSpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.StaticInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    }
+  ],
+  "features": []
 }

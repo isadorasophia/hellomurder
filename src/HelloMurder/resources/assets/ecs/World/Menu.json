@@ -1,46 +1,35 @@
 {
-  "$type": "Murder.Assets.WorldAsset, Murder",
+  "$type": "Murder.Assets.WorldAsset",
   "WorldName": "World",
   "Order": 1,
-  "_systems": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Type, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": []
-  },
-  "_features": {
-    "$type": "System.Collections.Immutable.ImmutableArray`1[[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib]], System.Collections.Immutable",
-    "$values": [
-      {
-        "$type": "System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
-        "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
-        "Item2": true
-      }
-    ]
-  },
-  "_folders": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Immutable.ImmutableArray`1[[System.Guid, System.Private.CoreLib]], System.Collections.Immutable]], System.Private.CoreLib"
-  },
-  "_entities": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[Murder.Prefabs.EntityInstance, Murder]], System.Private.CoreLib",
+  "Name": "Menu",
+  "Guid": "e09343c5-19b5-419d-88f4-f06ed35a4752",
+  "systems": [],
+  "features": [
+    {
+      "Item1": "4dc3c8b1-5b4a-4ca5-818c-f7763169e2e6",
+      "Item2": true
+    }
+  ],
+  "folders": {},
+  "filterFolders": {},
+  "entities": {
     "e5c06d11-f5cb-4f1b-938f-bccafdd97d29": {
-      "$type": "Murder.Prefabs.EntityInstance, Murder",
-      "_guid": "e5c06d11-f5cb-4f1b-938f-bccafdd97d29",
-      "_name": "Menu",
-      "_components": {
-        "$type": "System.Collections.Generic.Dictionary`2[[System.Type, System.Private.CoreLib],[Bang.Components.IComponent, Bang]], System.Private.CoreLib",
-        "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Bang.StateMachines.StateMachineComponent`1[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder]], Bang",
-          "_routine": {
-            "$type": "HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder",
-            "_newGameWorld": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
-            "_cachedPersistedState": "Main"
+      "IsDeactivated": false,
+      "ActivateWithParent": false,
+      "guid": "e5c06d11-f5cb-4f1b-938f-bccafdd97d29",
+      "name": "Menu",
+      "components": {
+        "Bang.StateMachines.StateMachineComponent\u00601[[HelloMurder.StateMachines.MainMenuStateMachine, HelloMurder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.StateMachines.StateMachineComponent\u003CHelloMurder.StateMachines.MainMenuStateMachine\u003E",
+          "routine": {
+            "newGameWorld": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
+            "cachedPersistedState": "Main"
           }
         }
       }
     }
   },
-  "_entitiesToFolder": {
-    "$type": "System.Collections.Generic.Dictionary`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib"
-  },
-  "Name": "Menu",
-  "Guid": "e09343c5-19b5-419d-88f4-f06ed35a4752"
+  "entitiesToFolder": {},
+  "entitiesToFilter": {}
 }

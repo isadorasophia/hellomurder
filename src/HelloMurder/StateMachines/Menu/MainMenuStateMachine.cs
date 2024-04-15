@@ -1,4 +1,5 @@
-﻿using Bang.Entities;
+﻿using Bang;
+using Bang.Entities;
 using Bang.StateMachines;
 using HelloMurder.Core;
 using Murder;
@@ -9,14 +10,12 @@ using Murder.Core.Geometry;
 using Murder.Core.Graphics;
 using Murder.Core.Input;
 using Murder.Services;
-using Newtonsoft.Json;
-using System.Globalization;
 
 namespace HelloMurder.StateMachines
 {
-    internal class MainMenuStateMachine : StateMachine
+    public class MainMenuStateMachine : StateMachine
     {
-        [JsonProperty, GameAssetId(typeof(WorldAsset))]
+        [Serialize, GameAssetId(typeof(WorldAsset))]
         private readonly Guid _newGameWorld = Guid.Empty;
 
         private MenuInfo _menuInfo = new();

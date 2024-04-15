@@ -1,114 +1,69 @@
 {
-  "$type": "Murder.Assets.CharacterAsset, Murder",
+  "$type": "Murder.Assets.CharacterAsset",
   "Owner": "00000000-0000-0000-0000-000000000000",
-  "_situations": {
-    "$type": "System.Collections.Generic.SortedList`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.Situation, Murder]], System.Collections",
+  "Name": "Hello",
+  "Guid": "a76c51b9-e048-46d3-a66f-616e636336ee",
+  "situations": {
     "0": {
-      "$type": "Murder.Core.Dialogs.Situation, Murder",
       "Id": 0,
       "Name": "Hello",
-      "Dialogs": {
-        "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Dialog, Murder]], System.Collections.Immutable",
-        "$values": [
-          {
-            "$type": "Murder.Core.Dialogs.Dialog, Murder",
-            "PlayUntil": -1,
-            "Id": 0,
-            "Requirements": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
-              "$values": []
+      "Dialogs": [
+        {
+          "PlayUntil": -1,
+          "Id": 0,
+          "Requirements": [],
+          "Lines": [],
+          "IsChoice": false
+        },
+        {
+          "PlayUntil": 1,
+          "Id": 1,
+          "Requirements": [],
+          "Lines": [
+            {
+              "Text": {
+                "Id": "40f7d8c1-b986-4d47-9469-3a67e511c854"
+              }
+            }
+          ],
+          "GoTo": -1,
+          "IsChoice": false
+        },
+        {
+          "PlayUntil": -1,
+          "Id": 2,
+          "Requirements": [],
+          "Lines": [
+            {
+              "Text": {
+                "Id": "a0177851-ca14-4e22-85f4-2078c4ae8bf7"
+              }
             },
-            "Lines": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
-              "$values": []
+            {
+              "Text": {
+                "Id": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed"
+              }
             },
-            "IsChoice": false
-          },
-          {
-            "$type": "Murder.Core.Dialogs.Dialog, Murder",
-            "PlayUntil": 1,
-            "Id": 1,
-            "Requirements": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
-              "$values": []
-            },
-            "Lines": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
-              "$values": [
-                {
-                  "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": {
-                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
-                    "Id": "40f7d8c1-b986-4d47-9469-3a67e511c854"
-                  }
-                }
-              ]
-            },
-            "GoTo": -1,
-            "IsChoice": false
-          },
-          {
-            "$type": "Murder.Core.Dialogs.Dialog, Murder",
-            "PlayUntil": -1,
-            "Id": 2,
-            "Requirements": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.CriterionNode, Murder]], System.Collections.Immutable",
-              "$values": []
-            },
-            "Lines": {
-              "$type": "System.Collections.Immutable.ImmutableArray`1[[Murder.Core.Dialogs.Line, Murder]], System.Collections.Immutable",
-              "$values": [
-                {
-                  "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": {
-                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
-                    "Id": "a0177851-ca14-4e22-85f4-2078c4ae8bf7"
-                  }
-                },
-                {
-                  "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": {
-                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
-                    "Id": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed"
-                  }
-                },
-                {
-                  "$type": "Murder.Core.Dialogs.Line, Murder",
-                  "Text": {
-                    "$type": "System.Nullable`1[[Murder.Assets.LocalizedString, Murder]], System.Private.CoreLib",
-                    "Id": "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
-                  }
-                }
-              ]
-            },
-            "IsChoice": false
-          }
-        ]
-      },
+            {
+              "Text": {
+                "Id": "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
+              }
+            }
+          ],
+          "IsChoice": false
+        }
+      ],
       "Edges": {
-        "$type": "System.Collections.Immutable.ImmutableDictionary`2[[System.Int32, System.Private.CoreLib],[Murder.Core.Dialogs.DialogEdge, Murder]], System.Collections.Immutable",
         "0": {
-          "$type": "Murder.Core.Dialogs.DialogEdge, Murder",
           "Kind": 1,
-          "Dialogs": {
-            "$type": "System.Collections.Immutable.ImmutableArray`1[[System.Int32, System.Private.CoreLib]], System.Collections.Immutable",
-            "$values": [
-              1,
-              2
-            ]
-          }
+          "Dialogs": [
+            1,
+            2
+          ]
         }
       }
     }
   },
-  "_components": {
-    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[Bang.Components.IComponent, Bang]], Murder",
-    "$values": []
-  },
-  "_portraits": {
-    "$type": "Murder.Serialization.ComplexDictionary`2[[Murder.Core.Dialogs.DialogItemId, Murder],[System.ValueTuple`2[[System.Guid, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib]], Murder",
-    "$values": []
-  },
-  "Name": "Hello",
-  "Guid": "a76c51b9-e048-46d3-a66f-616e636336ee"
+  "components": {},
+  "portraits": {}
 }
