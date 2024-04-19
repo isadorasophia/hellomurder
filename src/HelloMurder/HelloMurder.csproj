@@ -75,4 +75,12 @@
     </ProjectReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Do not trim our assemblies for Native AOT -->
+    <TrimmerRootAssembly Include="Bang" />
+    <TrimmerRootAssembly Include="Murder" />
+    <TrimmerRootAssembly Include="MonoGame.Framework" />
+    <TrimmerRootAssembly Include="HelloMurder" />
+  </ItemGroup>
+
 </Project>
