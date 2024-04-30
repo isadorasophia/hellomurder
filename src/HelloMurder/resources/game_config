@@ -17,10 +17,13 @@
   "GameScale": 2,
   "FeedbackUrl": "",
   "FeedbackKey": "changeme",
-  "ResizeMode": 2,
-  "SnapToInteger": 0.25,
-  "PositiveApectRatioAllowance": 0.5,
-  "NegativeApectRatioAllowance": 0.1,
+  "ResizeStyle": {
+    "ResizeMode": 3,
+    "SnapToInteger": 0.25,
+    "RoundingMode": 2,
+    "PositiveApectRatioAllowance": 0.5,
+    "NegativeApectRatioAllowance": 0.1
+  },
   "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2,
