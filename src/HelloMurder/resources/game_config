@@ -199,6 +199,7 @@
     "English": "2c73a6f8-51dc-4bfc-87a8-d9b3f0835af7",
     "Portuguese": "4219ee72-8fb3-467f-adfc-b0116ff2f048"
   },
+  "MinimumVelocityForSweep": 6,
   "Name": "Game Profile",
   "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f",
   "scalingFilter": false,
