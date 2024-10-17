@@ -24,7 +24,6 @@
     "PositiveApectRatioAllowance": 0.5,
     "NegativeApectRatioAllowance": 0.1
   },
-  "Fullscreen": false,
   "TargetFps": 60,
   "FixedUpdateFactor": 2,
   "IsVSyncEnabled": false,
@@ -186,7 +185,8 @@
     "DialogueBtnStepBack": "acdd67d5-64da-333f-f96c-dfadf9857dce",
     "DialogueBtnStepForward": "bbbaf440-1261-2598-8af2-b8d0e9e6922e",
     "SoundImage": "1ad61775-94d2-0765-a254-f16d6c8a3d4d",
-    "MusicImage": "2a98ce49-1e0a-9109-026f-3392d992e44d"
+    "MusicImage": "2a98ce49-1e0a-9109-026f-3392d992e44d",
+    "ListenerImage": "2a98ce49-1e0a-9109-026f-3392d992e44d"
   },
   "BackColor": {
     "R": 0.12156863,
