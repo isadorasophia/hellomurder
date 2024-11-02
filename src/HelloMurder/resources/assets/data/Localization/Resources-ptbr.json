@@ -1,35 +1,35 @@
 {
   "$type": "Murder.Assets.Localization.LocalizationAsset",
-  "Name": "Resources",
-  "Guid": "e85e8fe7-bc0c-4f5e-af4b-2c8f8c30d662",
+  "Name": "Resources-ptbr",
+  "Guid": "1af4f46f-3efa-444c-bddf-3d290db9de22",
   "resources": [
     {
-      "String": "Welcome to Murder Engine.",
+      "String": "Bem-vindo \u00E0 Murder engine.",
       "IsGenerated": true,
       "Guid": "af1fa761-f336-4472-b2b7-7603f6273457"
     },
     {
-      "String": "Please, make yourself at home!!",
+      "String": "Por favor, sinta-se em casa!!",
       "IsGenerated": true,
       "Guid": "ad9a660c-0450-4a59-a2aa-7ec2724dd432"
     },
     {
-      "String": "Sure.",
+      "String": "Claro.",
       "IsGenerated": true,
       "Guid": "c0a0475a-7003-4d22-90e8-0eabd9f7ed7a"
     },
     {
-      "String": "Right?",
+      "String": "Certo?",
       "IsGenerated": true,
       "Guid": "35839167-8960-4eef-acc8-891d1cc06b90"
     },
     {
-      "String": "Welcome to Murder engine!",
+      "String": "Bem-vindo \u00E0 Murder engine.",
       "IsGenerated": false,
       "Guid": "d094b564-ca25-4a5d-b8f1-8461b5c01e3d"
     },
     {
-      "String": "There\u0027s nothing much here... yet.",
+      "String": "N\u00E3o h\u00E1 muita coisa aqui... ainda.",
       "IsGenerated": false,
       "Guid": "252a471d-d58f-4f08-8742-6f7bc95001a9"
     }

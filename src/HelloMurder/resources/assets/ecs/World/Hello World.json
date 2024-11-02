@@ -2,6 +2,7 @@
   "$type": "Murder.Assets.WorldAsset",
   "WorldName": "World",
   "Order": 1,
+  "ReferencedAtlas": [],
   "Name": "Hello World",
   "Guid": "3bd26720-c3b1-44c1-b7c3-192d5656cc37",
   "systems": [],
@@ -11,6 +12,7 @@
       "Item2": true
     }
   ],
+  "systemsToRemove": [],
   "folders": {
     "Room": [
       "5d34f9a7-91d0-4142-82eb-9e1393c88297",
@@ -659,10 +661,10 @@
           "$type": "HelloMurder.Components.DialogueUiComponent",
           "Content": [
             {
-              "Id": "892db261-ec18-41ff-ba71-65094f89495e"
+              "Id": "d094b564-ca25-4a5d-b8f1-8461b5c01e3d"
             },
             {
-              "Id": "6693dcc2-7876-4e4e-a10b-aaf93d814759"
+              "Id": "252a471d-d58f-4f08-8742-6f7bc95001a9"
             }
           ]
         }
