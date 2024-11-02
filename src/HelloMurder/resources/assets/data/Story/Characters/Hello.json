@@ -4,53 +4,58 @@
   "Name": "Hello",
   "Guid": "a76c51b9-e048-46d3-a66f-616e636336ee",
   "situations": {
-    "0": {
+    "Hello": {
       "Id": 0,
       "Name": "Hello",
       "Dialogs": [
         {
           "PlayUntil": -1,
+          "Chance": 1,
           "Id": 0,
           "Requirements": [],
           "Lines": [],
-          "IsChoice": false
+          "IsChoice": false,
+          "IsExit": false
         },
         {
           "PlayUntil": 1,
+          "Chance": 1,
           "Id": 1,
           "Requirements": [],
           "Lines": [
             {
               "Text": {
-                "Id": "40f7d8c1-b986-4d47-9469-3a67e511c854"
+                "Id": "c8837747-085a-4268-bdc6-4844a2433d4a"
               }
             }
           ],
-          "GoTo": -1,
-          "IsChoice": false
+          "IsChoice": false,
+          "IsExit": false
         },
         {
           "PlayUntil": -1,
+          "Chance": 1,
           "Id": 2,
           "Requirements": [],
           "Lines": [
             {
               "Text": {
-                "Id": "a0177851-ca14-4e22-85f4-2078c4ae8bf7"
+                "Id": "8f43f851-a621-42bd-aade-fc56c5dc5fd1"
               }
             },
             {
               "Text": {
-                "Id": "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed"
+                "Id": "92e232cc-020b-45f2-879b-809cb18188f9"
               }
             },
             {
               "Text": {
-                "Id": "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
+                "Id": "71850a8a-128c-41ad-8043-eb281d448ca6"
               }
             }
           ],
-          "IsChoice": false
+          "IsChoice": false,
+          "IsExit": false
         }
       ],
       "Edges": {
@@ -64,6 +69,5 @@
       }
     }
   },
-  "components": {},
-  "portraits": {}
+  "data": {}
 }

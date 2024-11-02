@@ -32,16 +32,48 @@
       "String": "That is all for now.",
       "IsGenerated": false,
       "Guid": "6693dcc2-7876-4e4e-a10b-aaf93d814759"
+    },
+    {
+      "String": "Welcome to Murder Engine.",
+      "IsGenerated": true,
+      "Guid": "c8837747-085a-4268-bdc6-4844a2433d4a"
+    },
+    {
+      "String": "Sure.",
+      "IsGenerated": true,
+      "Guid": "92e232cc-020b-45f2-879b-809cb18188f9"
+    },
+    {
+      "String": "Right?",
+      "IsGenerated": true,
+      "Guid": "71850a8a-128c-41ad-8043-eb281d448ca6"
+    },
+    {
+      "String": "Please, make yourself at home!!",
+      "IsGenerated": true,
+      "Guid": "8f43f851-a621-42bd-aade-fc56c5dc5fd1"
     }
   ],
   "dialogueResources": [
     {
       "DialogueResourceGuid": "a76c51b9-e048-46d3-a66f-616e636336ee",
-      "Resources": [
-        "40f7d8c1-b986-4d47-9469-3a67e511c854",
-        "a0177851-ca14-4e22-85f4-2078c4ae8bf7",
-        "8ccc2c6d-ca2f-4a86-a40f-7e3e1bd7e8ed",
-        "456d30c3-11b3-4e2c-ba3e-005a4f950d79"
+      "DataResources": [
+        {
+          "Guid": "c8837747-085a-4268-bdc6-4844a2433d4a",
+          "Speaker": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "Guid": "8f43f851-a621-42bd-aade-fc56c5dc5fd1",
+          "Speaker": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "Guid": "92e232cc-020b-45f2-879b-809cb18188f9",
+          "Speaker": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+          "Guid": "71850a8a-128c-41ad-8043-eb281d448ca6",
+          "Speaker": "00000000-0000-0000-0000-000000000000"
+        }
       ]
     }
   ]
