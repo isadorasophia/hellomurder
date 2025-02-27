@@ -110,6 +110,12 @@
       "Y": 0.9765625,
       "Z": 0.546875,
       "W": 1
+    },
+    "YellowFaded": {
+      "X": 0.37890625,
+      "Y": 0.37109375,
+      "Z": 0.24609375,
+      "W": 1
     }
   },
   "Exploration": {
@@ -197,7 +203,8 @@
   "MissingImage": "3c4ec0fa-0d0c-4f0f-9cb7-079bb9734a26",
   "LocalizationResources": {
     "English": "e85e8fe7-bc0c-4f5e-af4b-2c8f8c30d662",
-    "Portuguese": "1af4f46f-3efa-444c-bddf-3d290db9de22"
+    "Portuguese": "1af4f46f-3efa-444c-bddf-3d290db9de22",
+    "Japanese": "696a8c91-896f-42b4-af79-cd53c4948da5"
   },
   "MinimumVelocityForSweep": 6,
   "Name": "Game Profile",
