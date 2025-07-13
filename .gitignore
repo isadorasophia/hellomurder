@@ -201,3 +201,6 @@ ServiceFabricBackup/
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# macOS
+.DS_Store
