@@ -3,8 +3,8 @@
   "Owner": "00000000-0000-0000-0000-000000000000",
   "Name": "Hello",
   "Guid": "a76c51b9-e048-46d3-a66f-616e636336ee",
-  "situations": {
-    "Hello": {
+  "allSituations": [
+    {
       "Id": 0,
       "Name": "Hello",
       "Dialogs": [
@@ -68,6 +68,6 @@
         }
       }
     }
-  },
-  "data": {}
+  ],
+  "dialogueData": []
 }

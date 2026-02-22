@@ -26,37 +26,36 @@
       },
       "Murder.Components.SpriteComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.SpriteComponent",
+        "TargetSpriteBatch": 0,
         "AnimationGuid": "daf91d39-f280-4c83-f2ac-cef2f8c16dc8",
+        "RotateWithFacing": false,
         "HighlightStyle": 0,
         "NextAnimations": [],
         "YSortOffset": 0,
-        "TargetSpriteBatch": 0,
         "Offset": {
           "X": 0.5,
           "Y": 1
         },
-        "RotateWithFacing": false,
-        "FlipWithFacing": false,
         "UseUnscaledTime": false
       },
       "Murder.Components.ColliderComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.ColliderComponent",
-        "Layer": 8,
         "Shapes": [
           {
             "$type": "Murder.Core.Geometry.BoxShape",
+            "Offset": {
+              "X": 0,
+              "Y": 0
+            },
             "Width": 16,
             "Height": 16,
             "Origin": {
               "X": 0.5,
               "Y": 1
-            },
-            "Offset": {
-              "X": 0,
-              "Y": 0
             }
           }
         ],
+        "Layer": 8,
         "DebugColor": {
           "R": 1,
           "G": 0,
