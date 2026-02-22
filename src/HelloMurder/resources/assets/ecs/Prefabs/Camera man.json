@@ -21,6 +21,7 @@
     "components": {
       "Murder.Components.CameraFollowComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
         "$type": "Murder.Components.CameraFollowComponent",
+        "Speed": 0,
         "Enabled": true,
         "Style": 0
       },

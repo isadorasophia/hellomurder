@@ -25,7 +25,6 @@
     "NegativeApectRatioAllowance": 0.1
   },
   "TargetFps": 60,
-  "FixedUpdateFactor": 2,
   "IsVSyncEnabled": false,
   "ShowUiDebug": true,
   "PushAwayInterval": 0.05,
@@ -118,22 +117,6 @@
       "W": 1
     }
   },
-  "Exploration": {
-    "TileExplorationDuration": 0.5,
-    "SpriteExplorationDuration": 1.5,
-    "UnexploredColor": {
-      "R": 0.12109375,
-      "G": 0.15234375,
-      "B": 0.23828125,
-      "A": 1
-    },
-    "ExploreColor": {
-      "R": 0.796875,
-      "G": 0.6015625,
-      "B": 0.984375,
-      "A": 1
-    }
-  },
   "EditorAssets": {
     "Normal": "6969ba27-bf7a-5a96-bfd4-295703c6bed2",
     "Point": "6fd7342b-ae38-092f-c7b7-e80d98dc6b83",
@@ -207,6 +190,8 @@
     "Japanese": "696a8c91-896f-42b4-af79-cd53c4948da5"
   },
   "MinimumVelocityForSweep": 6,
+  "InputGraphics": "00000000-0000-0000-0000-000000000000",
+  "InputProfile": "00000000-0000-0000-0000-000000000000",
   "Name": "Game Profile",
   "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f",
   "scalingFilter": false,
