@@ -35,10 +35,6 @@
     {
       "Item1": "Murder.Systems.Utilities.DestroyOnBlackboardConditionSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
-    },
-    {
-      "Item1": "Murder.Systems.Utilities.QuestTrackerSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "Item2": true
     }
   ],
   "features": []

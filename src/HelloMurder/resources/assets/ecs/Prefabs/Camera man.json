@@ -24,8 +24,8 @@
         "Enabled": true,
         "Style": 0
       },
-      "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-        "$type": "Murder.Components.PositionComponent",
+      "Bang.Components.PositionComponent, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+        "$type": "Bang.Components.PositionComponent",
         "x": 0,
         "y": 0
       }

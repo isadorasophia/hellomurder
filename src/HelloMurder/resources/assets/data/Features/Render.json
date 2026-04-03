@@ -17,7 +17,11 @@
       "Item2": true
     },
     {
-      "Item1": "Murder.Systems.Graphics.TilemapAndFloorRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item1": "Murder.Systems.FloorWithBatchOptimizationRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.TilemapNoFloorRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
     },
     {

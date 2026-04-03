@@ -32,6 +32,61 @@
       "String": "There\u0027s nothing much here... yet.",
       "IsGenerated": false,
       "Guid": "252a471d-d58f-4f08-8742-6f7bc95001a9"
+    },
+    {
+      "String": "New game",
+      "IsGenerated": false,
+      "Guid": "7e70f443-8ad9-4ec4-bac6-906a433d7e75"
+    },
+    {
+      "String": "Continue",
+      "IsGenerated": false,
+      "Guid": "fe7e0927-0563-47f6-8224-61ef56789a08"
+    },
+    {
+      "String": "Options",
+      "IsGenerated": false,
+      "Guid": "765cb8cb-d777-4ed7-85c3-082d05add3c8"
+    },
+    {
+      "String": "Exit",
+      "IsGenerated": false,
+      "Guid": "2e7cf13e-3c5b-457b-8069-300049e863c9"
+    },
+    {
+      "String": "Sounds on",
+      "IsGenerated": false,
+      "Guid": "d18558f0-de5e-406f-af72-2eb3bfd938fd"
+    },
+    {
+      "String": "Sounds off",
+      "IsGenerated": false,
+      "Guid": "8d0e3b5f-0e69-4d0b-85e9-ed126b033624"
+    },
+    {
+      "String": "Music on",
+      "IsGenerated": false,
+      "Guid": "ebdf7956-0eb0-4e5f-960c-8e4a4593bce6"
+    },
+    {
+      "String": "Music off",
+      "IsGenerated": false,
+      "Guid": "d0e65fcc-8f53-44ba-aef1-340ddcfcaac4"
+    },
+    {
+      "String": "English",
+      "IsGenerated": false,
+      "Guid": "e340189d-a247-478a-a00e-9d2cadcb0f29"
+    },
+    {
+      "String": "Back",
+      "IsGenerated": false,
+      "Guid": "af341ff5-2288-4af5-9812-d885853a637e"
+    },
+    {
+      "String": "Movement",
+      "IsGenerated": false,
+      "Guid": "3b99d58d-8180-4a88-8c75-2d1d8584d1e7"
     }
   ],
   "dialogueResources": [

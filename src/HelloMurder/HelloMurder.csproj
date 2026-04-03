@@ -4,6 +4,11 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+
+    <GeneratorParentAssembly>Murder</GeneratorParentAssembly>
+    
     <PublishAot>true</PublishAot>
     <IsTrimmable>false</IsTrimmable>
 
@@ -11,7 +16,9 @@
     
     <!-- Investigate if we need this -->
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
-    <GeneratorParentAssembly>Murder</GeneratorParentAssembly>
+	  
+    <ApplicationManifest>resources\app.manifest</ApplicationManifest>
+    <ApplicationIcon>resources\Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <!-- Resources -->
@@ -20,37 +27,19 @@
     <Content Include="packed\**" CopyToOutputDirectory="PreserveNewest" TargetPath="resources\%(RecursiveDir)\%(Filename)%(Extension)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="resources\Icon.bmp" />
-    <None Remove="resources\Icon.ico" />
-  </ItemGroup>
-
   <!-- Example for localization resources in english and portuguese -->
+
   <ItemGroup>
-    <Content Include="loc\LocalizedResources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>LocalizedResources.resx</DependentUpon>
-    </Content>
-    <Content Include="loc\LocalizedResources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>LocalizedResources.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>HelloMurder</CustomToolNamespace>
-    </Content>
-    <Content Include="loc\LocalizedResources.pt-BR.resx" />
+    <EmbeddedResource Include="resources\Icon.ico" LogicalName="Icon.ico" />
+    <EmbeddedResource Include="resources\Icon.bmp" LogicalName="Icon.bmp" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="resources\Icon.bmp">
-      <LogicalName>Icon.bmp</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="resources\Icon.ico">
-      <LogicalName>Icon.ico</LogicalName>
-    </EmbeddedResource>
-  </ItemGroup>
+    <ProjectReference Include="..\..\murder\src\Murder\Murder.csproj">
+      <Properties Condition="'$(EDITOR)' == 'true'">EDITOR=true</Properties>
+    </ProjectReference>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\murder\src\Murder\Murder.csproj" />
+    <AssemblyAttribute Include="Murder.MurderAttribute" />
   </ItemGroup>
 
   <ItemGroup>

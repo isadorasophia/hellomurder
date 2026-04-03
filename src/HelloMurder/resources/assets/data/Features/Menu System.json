@@ -11,6 +11,18 @@
     {
       "Item1": "Murder.Systems.Graphics.CustomDrawRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
       "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Graphics.SpriteRenderSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.Utilities.AlwaysInCameraSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
+    },
+    {
+      "Item1": "Murder.Systems.SoundsSystem, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Item2": true
     }
   ],
   "features": []

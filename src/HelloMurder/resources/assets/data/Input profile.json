@@ -1,0 +1,78 @@
+{
+  "$type": "Murder.Assets.Input.InputProfileAsset",
+  "Axis": [
+    {
+      "AxisId": 100,
+      "AllowPlayerCustomization": true,
+      "Horizontal": true,
+      "Vertical": true,
+      "LocalizedName": {
+        "Id": "3b99d58d-8180-4a88-8c75-2d1d8584d1e7"
+      },
+      "Analogue": [
+        0,
+        1
+      ],
+      "Digital": [
+        [
+          {
+            "Source": 0,
+            "keyboard": 87
+          },
+          {
+            "Source": 0,
+            "keyboard": 65
+          },
+          {
+            "Source": 0,
+            "keyboard": 83
+          },
+          {
+            "Source": 0,
+            "keyboard": 68
+          }
+        ],
+        [
+          {
+            "Source": 0,
+            "keyboard": 38
+          },
+          {
+            "Source": 0,
+            "keyboard": 37
+          },
+          {
+            "Source": 0,
+            "keyboard": 40
+          },
+          {
+            "Source": 0,
+            "keyboard": 39
+          }
+        ],
+        [
+          {
+            "Source": 2,
+            "gamepad": 1
+          },
+          {
+            "Source": 2,
+            "gamepad": 4
+          },
+          {
+            "Source": 2,
+            "gamepad": 2,
+            "mouse": 0
+          },
+          {
+            "Source": 2,
+            "gamepad": 8
+          }
+        ]
+      ]
+    }
+  ],
+  "Buttons": [],
+  "Name": "Input profile",
+  "Guid": "89485c2a-59c8-499b-bccd-63aa8645933c"
+}

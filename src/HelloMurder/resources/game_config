@@ -1,9 +1,11 @@
 {
-  "$type": "Murder.Assets.GameProfile",
+  "$type": "HelloMurder.Assets.HelloMurderGameProfile",
+  "Library": "2436d3a9-1881-4bb3-ba75-524d9a026459",
   "AtlasFolderName": "atlas/",
   "ContentAsepritePath": "aseprite/",
   "FontPath": "shaders/",
   "SoundsPath": "sounds/",
+  "VideoPath": "video/",
   "DialoguesPath": "dialogues/",
   "LocalizationPath": "loc/",
   "ShadersPath": "shaders/",
@@ -12,49 +14,47 @@
   "AssetResourcesPath": "assets/",
   "ContentECSPath": "ecs/",
   "GenericAssetsPath": "data/",
-  "GameWidth": 640,
-  "GameHeight": 320,
-  "GameScale": 2,
-  "FeedbackUrl": "",
-  "FeedbackKey": "changeme",
-  "ResizeStyle": {
-    "ResizeMode": 3,
-    "SnapToInteger": 0.25,
-    "RoundingMode": 2,
-    "PositiveApectRatioAllowance": 0.5,
-    "NegativeApectRatioAllowance": 0.1
-  },
   "TargetFps": 60,
-  "FixedUpdateFactor": 2,
-  "IsVSyncEnabled": false,
-  "ShowUiDebug": true,
+  "IsVSyncEnabled": true,
   "PushAwayInterval": 0.05,
   "DefaultGridCellSize": 24,
   "StartingScene": "e09343c5-19b5-419d-88f4-f06ed35a4752",
   "PreloadTextures": true,
   "Theme": {
     "Bg": {
-      "X": 0.15625,
-      "Y": 0.1640625,
-      "Z": 0.2109375,
+      "X": 0.1171875,
+      "Y": 0.125,
+      "Z": 0.1875,
+      "W": 1
+    },
+    "BgHeader": {
+      "X": 0.14453125,
+      "Y": 0.15625,
+      "Z": 0.25,
       "W": 1
     },
     "BgFaded": {
-      "X": 0.265625,
-      "Y": 0.27734375,
-      "Z": 0.3515625,
+      "X": 0.2109375,
+      "Y": 0.2265625,
+      "Z": 0.33203125,
+      "W": 1
+    },
+    "Selected": {
+      "X": 0.23828125,
+      "Y": 0.25390625,
+      "Z": 0.3984375,
+      "W": 1
+    },
+    "Faded": {
+      "X": 0.359375,
+      "Y": 0.390625,
+      "Z": 0.578125,
       "W": 1
     },
     "Foreground": {
-      "X": 0.5703125,
-      "Y": 0.375,
-      "Z": 0.66796875,
-      "W": 1
-    },
-    "HighAccent": {
-      "X": 0.99609375,
-      "Y": 0.47265625,
-      "Z": 0.7734375,
+      "X": 0.5625,
+      "Y": 0.3828125,
+      "Z": 0.6875,
       "W": 1
     },
     "Accent": {
@@ -63,34 +63,10 @@
       "Z": 0.97265625,
       "W": 1
     },
-    "RedFaded": {
-      "X": 0.265625,
-      "Y": 0.29296875,
-      "Z": 0.99609375,
-      "W": 1
-    },
-    "Faded": {
-      "X": 0.3828125,
-      "Y": 0.4453125,
-      "Z": 0.640625,
-      "W": 1
-    },
-    "Red": {
+    "HighAccent": {
       "X": 0.99609375,
-      "Y": 0.33203125,
-      "Z": 0.26953125,
-      "W": 1
-    },
-    "Green": {
-      "X": 0.2578125,
-      "Y": 0.99609375,
-      "Z": 0.1328125,
-      "W": 1
-    },
-    "Warning": {
-      "X": 0.91796875,
-      "Y": 0.5546875,
-      "Z": 0.2578125,
+      "Y": 0.47265625,
+      "Z": 0.7734375,
       "W": 1
     },
     "White": {
@@ -99,39 +75,47 @@
       "Z": 0.9453125,
       "W": 1
     },
-    "GenericAsset": {
-      "X": 1,
-      "Y": 0.4,
-      "Z": 0.6,
-      "W": 1
-    },
     "Yellow": {
-      "X": 0.94140625,
-      "Y": 0.9765625,
-      "Z": 0.546875,
+      "X": 0.875,
+      "Y": 0.86328125,
+      "Z": 0.6875,
       "W": 1
     },
     "YellowFaded": {
-      "X": 0.37890625,
-      "Y": 0.37109375,
-      "Z": 0.24609375,
+      "X": 0.3046875,
+      "Y": 0.296875,
+      "Z": 0.1953125,
       "W": 1
-    }
-  },
-  "Exploration": {
-    "TileExplorationDuration": 0.5,
-    "SpriteExplorationDuration": 1.5,
-    "UnexploredColor": {
-      "R": 0.12109375,
-      "G": 0.15234375,
-      "B": 0.23828125,
-      "A": 1
     },
-    "ExploreColor": {
-      "R": 0.796875,
-      "G": 0.6015625,
-      "B": 0.984375,
-      "A": 1
+    "Warning": {
+      "X": 0.91796875,
+      "Y": 0.5546875,
+      "Z": 0.2578125,
+      "W": 1
+    },
+    "Red": {
+      "X": 0.875,
+      "Y": 0.33203125,
+      "Z": 0.3125,
+      "W": 1
+    },
+    "RedFaded": {
+      "X": 0.3515625,
+      "Y": 0.23828125,
+      "Z": 0.2578125,
+      "W": 1
+    },
+    "Green": {
+      "X": 0.24609375,
+      "Y": 0.78125,
+      "Z": 0.4765625,
+      "W": 1
+    },
+    "GenericAsset": {
+      "X": 0.875,
+      "Y": 0.484375,
+      "Z": 0.625,
+      "W": 1
     }
   },
   "EditorAssets": {
@@ -141,6 +125,7 @@
     "Eye": "5977841c-6962-360b-3712-55a9e352072d",
     "CutsceneImage": "e5084a6c-dcc6-09e0-628b-996637c46224",
     "AnchorImage": "e098676d-e88e-086a-42a8-b2cd0d42e217",
+    "PointAnchorImage": "43420358-b1bb-42d0-8282-0322badef6b2",
     "BoxBg": {
       "Core": {
         "X": 0,
@@ -195,20 +180,22 @@
     "ListenerImage": "2a98ce49-1e0a-9109-026f-3392d992e44d"
   },
   "BackColor": {
-    "R": 0.12156863,
-    "G": 0.15294118,
-    "B": 0.23921569,
+    "R": 0,
+    "G": 0,
+    "B": 0,
     "A": 1
   },
+  "DefaultPalette": "images/murder_palette",
   "MissingImage": "3c4ec0fa-0d0c-4f0f-9cb7-079bb9734a26",
   "LocalizationResources": {
     "English": "e85e8fe7-bc0c-4f5e-af4b-2c8f8c30d662",
-    "Portuguese": "1af4f46f-3efa-444c-bddf-3d290db9de22",
-    "Japanese": "696a8c91-896f-42b4-af79-cd53c4948da5"
+    "Portuguese": "49fd9b14-b08b-4bba-bca4-e1d19eb4b371"
   },
+  "TextIcons": "00000000-0000-0000-0000-000000000000",
   "MinimumVelocityForSweep": 6,
+  "InputGraphics": "00000000-0000-0000-0000-000000000000",
+  "InputProfile": "00000000-0000-0000-0000-000000000000",
   "Name": "Game Profile",
-  "Guid": "70ca35f4-bbb2-4de1-b2a3-27eab3f49c1f",
-  "scalingFilter": false,
-  "DefaultPalette": "images/murder_palette"
+  "Guid": "787ea054-7053-4031-a1d4-33e0ea0e43b8",
+  "scalingFilter": false
 }

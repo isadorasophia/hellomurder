@@ -32,6 +32,56 @@
       "String": "N\u00E3o h\u00E1 muita coisa aqui... ainda.",
       "IsGenerated": false,
       "Guid": "252a471d-d58f-4f08-8742-6f7bc95001a9"
+    },
+    {
+      "String": "Novo jogo",
+      "IsGenerated": false,
+      "Guid": "7e70f443-8ad9-4ec4-bac6-906a433d7e75"
+    },
+    {
+      "String": "Continuar",
+      "IsGenerated": false,
+      "Guid": "fe7e0927-0563-47f6-8224-61ef56789a08"
+    },
+    {
+      "String": "Op\u00E7\u00F5es",
+      "IsGenerated": false,
+      "Guid": "765cb8cb-d777-4ed7-85c3-082d05add3c8"
+    },
+    {
+      "String": "Sair",
+      "IsGenerated": false,
+      "Guid": "2e7cf13e-3c5b-457b-8069-300049e863c9"
+    },
+    {
+      "String": "Som ligado",
+      "IsGenerated": false,
+      "Guid": "d18558f0-de5e-406f-af72-2eb3bfd938fd"
+    },
+    {
+      "String": "Som desligado",
+      "IsGenerated": false,
+      "Guid": "8d0e3b5f-0e69-4d0b-85e9-ed126b033624"
+    },
+    {
+      "String": "M\u00FAsica ligada",
+      "IsGenerated": false,
+      "Guid": "ebdf7956-0eb0-4e5f-960c-8e4a4593bce6"
+    },
+    {
+      "String": "M\u00FAsica desligada",
+      "IsGenerated": false,
+      "Guid": "d0e65fcc-8f53-44ba-aef1-340ddcfcaac4"
+    },
+    {
+      "String": "Portugu\u00EAs",
+      "IsGenerated": false,
+      "Guid": "e340189d-a247-478a-a00e-9d2cadcb0f29"
+    },
+    {
+      "String": "Voltar",
+      "IsGenerated": false,
+      "Guid": "af341ff5-2288-4af5-9812-d885853a637e"
     }
   ],
   "dialogueResources": [

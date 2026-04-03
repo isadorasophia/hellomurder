@@ -33,8 +33,8 @@
       "childrenModifiers": {},
       "ignorePrefabChildren": false,
       "components": {
-        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.PositionComponent",
+        "Bang.Components.PositionComponent, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.Components.PositionComponent",
           "x": 109,
           "y": 84
         }
@@ -652,8 +652,8 @@
       "guid": "fc3ef0f7-b77a-4641-a9c9-f0a02d38cabc",
       "name": "Test",
       "components": {
-        "Murder.Components.PositionComponent, Murder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
-          "$type": "Murder.Components.PositionComponent",
+        "Bang.Components.PositionComponent, Bang, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": {
+          "$type": "Bang.Components.PositionComponent",
           "x": 70,
           "y": 125
         },

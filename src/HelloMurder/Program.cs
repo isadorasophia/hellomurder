@@ -8,12 +8,11 @@ namespace HelloMurder
         [STAThread]
         static void Main()
         {
-            try
-            {
-                using Game game = new(new HelloMurderGame());
-                game.Run();
-            }
-            catch (Exception ex) when (GameLogger.CaptureCrash(ex)) { }
+            // so mac is happy with us.
+            Environment.SetEnvironmentVariable("FNA_GRAPHICS_ENABLE_HIGHDPI", "1");
+
+            using Game game = new(new HelloMurderGame());
+            game.Run();
         }
     }
 }
