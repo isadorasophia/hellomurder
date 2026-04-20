@@ -40,6 +40,8 @@ public class HelloMurderGame : IMurderGame
 
     public int GetDefaultFont() => (int)MurderFonts.PixelFont;
 
+    public int GameWidth => 640;
+    public int GameHeight => 360;
     public void Initialize()
     {
         Game.Input.RegisterButton(MurderInputButtons.Space, Buttons.Y);
