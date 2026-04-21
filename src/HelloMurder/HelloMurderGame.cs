@@ -60,6 +60,7 @@ public class HelloMurderGame : IMurderGame
         Game.Input.RegisterButton(MurderInputButtons.Submit, Keys.Space, Keys.Enter);
         Game.Input.RegisterButton(MurderInputButtons.Cancel, Keys.Escape, Keys.Delete, Keys.Back, Keys.Tab);
 
-        Game.Input.RegisterButton(MurderInputButtons.Cancel, Keys.Escape, Keys.Delete, Keys.Back, Keys.Tab);
+        // Restore the default input bindings.
+        Game.Input.LoadFromPreferences(Game.Data.Preferences);
     }
 }

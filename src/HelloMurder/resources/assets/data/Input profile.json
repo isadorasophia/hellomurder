@@ -70,6 +70,76 @@
           }
         ]
       ]
+    },
+    {
+      "AxisId": 101,
+      "AllowPlayerCustomization": true,
+      "Horizontal": true,
+      "Vertical": true,
+      "LocalizedName": {
+        "Id": "bf1b9cb0-49eb-448c-9c76-8d705689c6fd"
+      },
+      "Analogue": [
+        0,
+        1
+      ],
+      "Digital": [
+        [
+          {
+            "Source": 0,
+            "keyboard": 87
+          },
+          {
+            "Source": 0,
+            "keyboard": 65
+          },
+          {
+            "Source": 0,
+            "keyboard": 83
+          },
+          {
+            "Source": 0,
+            "keyboard": 68
+          }
+        ],
+        [
+          {
+            "Source": 0,
+            "keyboard": 38
+          },
+          {
+            "Source": 0,
+            "keyboard": 37
+          },
+          {
+            "Source": 0,
+            "keyboard": 40
+          },
+          {
+            "Source": 0,
+            "keyboard": 39
+          }
+        ],
+        [
+          {
+            "Source": 2,
+            "gamepad": 1
+          },
+          {
+            "Source": 2,
+            "gamepad": 4
+          },
+          {
+            "Source": 2,
+            "gamepad": 2,
+            "mouse": 0
+          },
+          {
+            "Source": 2,
+            "gamepad": 8
+          }
+        ]
+      ]
     }
   ],
   "Buttons": [],

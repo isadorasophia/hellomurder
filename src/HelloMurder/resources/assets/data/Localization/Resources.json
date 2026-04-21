@@ -87,6 +87,11 @@
       "String": "Movement",
       "IsGenerated": false,
       "Guid": "3b99d58d-8180-4a88-8c75-2d1d8584d1e7"
+    },
+    {
+      "String": "Ui movement",
+      "IsGenerated": false,
+      "Guid": "bf1b9cb0-49eb-448c-9c76-8d705689c6fd"
     }
   ],
   "dialogueResources": [
